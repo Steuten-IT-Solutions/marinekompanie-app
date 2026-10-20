@@ -36,6 +36,8 @@
   --warn: #9c4a14;
   --warn-surface: #9c4a14;
   --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
   --hint-strong: #0b1735;
   --hint-text: #474c58;
   --accent-text: #1f4498;
@@ -91,7 +93,7 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <p>Eine neue Installation hat keine Bereiche. Wähle, was eure Kompanie nutzt: Termine, Kalender, News, Galerie, Punkte, Strafen. Ausgeschaltete Bereiche verschwinden aus der App; ihre Daten bleiben erhalten.</p>
 <p>Bereiche mit eigenen Aufgaben bringen beim Einschalten eine <strong>Standardrolle</strong> mit, z. B. „Punkte verwalten“ (siehe <a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen und Mitglieder</a>).</p>
 <h2>Google-Zugang</h2>
-<p>Galerie und ein privater Google Kalender lesen über einen gemeinsamen <strong>Google-Zugang</strong> (Abschnitt <strong>Google-Zugang</strong> in den Einstellungen, über Kalender und Galerie). Empfohlen ist <strong>Speichern und mit Google verbinden</strong> mit einem eigenen OAuth-Client; alternativ ein Dienstkonto mit JSON-Schlüssel. Schritt für Schritt: <a href="admin-google.html" data-seite="admin-google">Google einrichten</a>.</p>
+<p>Galerie und ein privater Google Kalender lesen über einen gemeinsamen <strong>Google-Zugang</strong> (Seite <strong>Google-Zugang</strong> in den Einstellungen). Empfohlen ist <strong>Speichern und mit Google verbinden</strong> mit einem eigenen OAuth-Client; alternativ ein Dienstkonto mit JSON-Schlüssel. Schritt für Schritt: <a href="admin-google.html" data-seite="admin-google">Google einrichten</a>.</p>
 <h2>Kalender</h2>
 <p>Für den Bereich Kalender gibt es zwei Wege:</p>
 <ul><li><strong>Ohne Google-Zugang:</strong> in Google Kalender beim Kalender der Kompanie unter <strong>Einstellungen → Kalender integrieren</strong> die <strong>geheime Adresse im iCal-Format</strong> kopieren und bei <strong>Geheime iCal-Adresse</strong> einfügen.</li><li><strong>Über den Google-Zugang</strong> (auch für private Kalender): bei <strong>Google-Kalender-IDs</strong> die <strong>Kalender-ID</strong> eintragen (Google Kalender → Einstellungen des Kalenders → <strong>Kalender integrieren</strong> → „Kalender-ID“; mehrere durch Komma trennen). Mit WordPress gibt es dafür im WP-Admin auch das Feld „Oder: Google-Kalender-IDs“. Bei einer Verbindung mit Google muss beim Verbinden auch das Häkchen für Google Kalender gesetzt worden sein, und das verbundene Konto muss den Kalender sehen können; ein Dienstkonto braucht eine Freigabe des Kalenders für seine E-Mail-Adresse („Alle Termindetails sehen“). Im Google-Cloud-Projekt muss die <strong>Google Calendar API</strong> aktiviert sein. Fehlt die Erlaubnis für den Kalender, steht in den Einstellungen und auf der Zustandsseite, dass neu verbunden werden muss; bis dahin gilt die iCal-Adresse, falls eingetragen.</li></ul>

@@ -36,6 +36,8 @@
   --warn: #9c4a14;
   --warn-surface: #9c4a14;
   --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
   --hint-strong: #0b1735;
   --hint-text: #474c58;
   --accent-text: #1f4498;
@@ -89,7 +91,7 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <h1>Installation ohne WordPress</h1><p class="wenn">Nur ohne WordPress.</p><p>Ihr braucht nur Webspace mit PHP. Eine Datenbank müsst ihr nicht anlegen; der Installer nimmt SQLite, wenn ihr keine MySQL-Datenbank angebt.</p>
 <ol><li>Auf der Download-Seite der Kompanie <code>install.php</code> herunterladen.</li><li>Im Dateimanager des Hosters (oder per FTP) einen Ordner <code>app</code> anlegen und die Datei hineinladen.</li><li><code>eure-webseite.de/app/install.php</code> öffnen und den Schritten folgen. Am Ende legt ihr das erste Admin-Konto an; der Installer löscht sich danach selbst.</li></ol>
 <h2>Cronjob (empfohlen)</h2>
-<p>Die App erledigt Hintergrundaufgaben (z. B. Galerie, Kalender, Updates) auch ohne Cronjob. Zuverlässiger geht es mit einem Cronjob beim Hoster, der alle 15 Minuten die Cron-Adresse aufruft. Die Adresse steht unter <strong>Einstellungen → Zustand der App</strong>.</p>
+<p>Die App erledigt Hintergrundaufgaben (z. B. Galerie, Kalender, Updates) auch ohne Cronjob. Zuverlässiger geht es mit einem Cronjob beim Hoster, der alle 15 Minuten die Cron-Adresse aufruft. Die Adresse steht unter <strong>Einstellungen → Zustand und Updates</strong>.</p>
 <p>Ohne Cronjob erledigt die App fällige Aufgaben nach einem Besuch, ohne den Besucher warten zu lassen. Klappt das auf eurem Webspace nicht, zeigt <strong>Zustand der App</strong> das rot an und nennt die Adresse für den Cronjob.</p>
 <h2>Server mit nginx</h2>
 <p>Die meisten Hoster nutzen den Webserver Apache oder LiteSpeed; dann richtet die App alles selbst ein (über die Dateien <code>.htaccess</code>). Läuft euer Webspace mit <strong>nginx</strong>, wertet der Server diese Dateien nicht aus. Die App läuft trotzdem, aber bittet den Hoster, Folgendes einzustellen:</p>
