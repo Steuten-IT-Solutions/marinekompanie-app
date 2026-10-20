@@ -1,19 +1,18 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Steuten-IT-Solutions/Kompanie-App-Template/v1/config/kompanie.schema.json",
-  "name": "Musterkompanie Beispielstadt",
-  "shortName": "Musterkompanie",
-  "greeting": "Hallo, {name}",
-  "guestWelcome": "Willkommen bei der Musterkompanie! Hier findest du unsere Termine, Neuigkeiten und Bilder.",
-  "labels": {
-    "roles": {
-      "manager": "Spieß"
+    "$schema": "https://raw.githubusercontent.com/Steuten-IT-Solutions/Kompanie-App-Template/v1/config/kompanie.schema.json",
+    "name": "Marinekompanie Lank",
+    "shortName": "Marinekompanie",
+    "greeting": "Ahoi, {name}",
+    "labels": {
+        "roles": {
+            "member": "Mitglied"
+        },
+        "sections": {
+            "penalties": "Strafen"
+        }
     },
-    "sections": {
-      "penalties": "Kasse"
+    "colors": {
+        "primary": "#1f4498",
+        "accent": "#c9a24a"
     }
-  },
-  "colors": {
-    "primary": "#2e6b3f",
-    "accent": "#d9a441"
-  }
 }
