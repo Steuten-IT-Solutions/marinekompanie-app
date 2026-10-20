@@ -1,0 +1,55 @@
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1f4498;
+  --primary-deep: #16316e;
+  --primary-ink: #0b1735;
+  --on-primary-soft: #d7ddec;
+  --accent-on-primary: #dbc085;
+  --bar-top: #16316e;
+  --bar-bottom: #0b1735;
+  --on-bar-muted: #a2adc5;
+  --primary-text: #1f4498;
+  --on-primary: #ffffff;
+  --accent: #c9a24a;
+  --accent-light: #dbc085;
+  --accent-dark: #856928;
+  --on-accent: #111418;
+  --bg: #eff1f2;
+  --card: #ffffff;
+  --ink: #171d2c;
+  --ink-2: #474c58;
+  --muted: #6a6d75;
+  --line: #dae0e9;
+  --line-strong: #c1cbde;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --hint-strong: #0b1735;
+  --hint-text: #474c58;
+  --accent-text: #1f4498;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #5d85de;
+    --accent-text: #d5b671;
+    --bg: #0d1321;
+    --card: #151e32;
+    --ink: #e9e7e2;
+    --ink-2: #bdbdbb;
+    --muted: #919295;
+    --line: #24304c;
+    --line-strong: #324267;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #d5b671;
+    --hint-strong: #d5b671;
+    --hint-text: #bdbdbb;
+    color-scheme: dark;
+  }
+}

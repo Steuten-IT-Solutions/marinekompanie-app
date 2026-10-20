@@ -1,0 +1,37 @@
+{
+  "name": "Marinekompanie Lank",
+  "shortName": "Marinekompanie",
+  "description": "Die App der Marinekompanie Lank",
+  "greeting": "Ahoi, {name}",
+  "guestWelcome": "",
+  "labels": {
+    "roles": {
+      "guest": "Gast",
+      "candidate": "Anwärter",
+      "member": "Mitglied",
+      "organizer": "Verwalter",
+      "manager": "Leitung",
+      "admin": "Admin"
+    },
+    "sections": {
+      "events": "Termine",
+      "news": "News",
+      "gallery": "Galerie",
+      "points": "Punkte",
+      "penalties": "Strafen",
+      "ranks": "Dienstgrade",
+      "titles": "Titel",
+      "attendance": "Anwesenheit",
+      "documents": "Dokumente",
+      "board": "Schwarzes Brett",
+      "polls": "Umfragen",
+      "birthdays": "Geburtstage",
+      "inventory": "Inventar"
+    },
+    "rank": "Dienstgrad"
+  },
+  "font": "System",
+  "themeColor": "#1f4498",
+  "backgroundColor": "#eff1f2",
+  "legal": {}
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benachrichtigungen – Handbuch der App der Marinekompanie Lank</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1f4498;
+  --primary-deep: #16316e;
+  --primary-ink: #0b1735;
+  --on-primary-soft: #d7ddec;
+  --accent-on-primary: #dbc085;
+  --bar-top: #16316e;
+  --bar-bottom: #0b1735;
+  --on-bar-muted: #a2adc5;
+  --primary-text: #1f4498;
+  --on-primary: #ffffff;
+  --accent: #c9a24a;
+  --accent-light: #dbc085;
+  --accent-dark: #856928;
+  --on-accent: #111418;
+  --bg: #eff1f2;
+  --card: #ffffff;
+  --ink: #171d2c;
+  --ink-2: #474c58;
+  --muted: #6a6d75;
+  --line: #dae0e9;
+  --line-strong: #c1cbde;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --hint-strong: #0b1735;
+  --hint-text: #474c58;
+  --accent-text: #1f4498;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #5d85de;
+    --accent-text: #d5b671;
+    --bg: #0d1321;
+    --card: #151e32;
+    --ink: #e9e7e2;
+    --ink-2: #bdbdbb;
+    --muted: #919295;
+    --line: #24304c;
+    --line-strong: #324267;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #d5b671;
+    --hint-strong: #d5b671;
+    --hint-text: #bdbdbb;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
+<main class="wrap">
+<h1>Benachrichtigungen</h1><p>Die App kann dich auf dem Handy oder am Computer benachrichtigen, wenn es etwas Neues gibt – auch wenn sie gerade geschlossen ist. Du wählst selbst, worüber.</p>
+<h2>Einschalten</h2>
+<ol><li>Mit Konto: <strong>Mein Konto</strong> → <strong>Benachrichtigungen einstellen</strong>. Ohne Konto: unter <strong>Termine</strong> auf <strong>Bei neuen Terminen benachrichtigen</strong> oder unter <strong>News</strong> auf <strong>Bei neuen Beiträgen benachrichtigen</strong> tippen.</li><li>Ankreuzen, worüber du benachrichtigt werden möchtest.</li><li><strong>Benachrichtigungen einschalten</strong> tippen und die Nachfrage des Browsers mit <strong>Erlauben</strong> bestätigen.</li></ol>
+<p>Mit <strong>Testnachricht senden</strong> prüfst du, ob alles klappt. Die Einstellung gilt nur für das Gerät, auf dem du sie vornimmst; auf weiteren Geräten schaltest du sie dort ein.</p>
+<h2>Was es gibt</h2>
+<ul><li><strong>Schwarzes Brett: dringende Nachrichten</strong>: nur mit Konto, für Mitglied und Anwärter, sobald jemand eine Nachricht ans Schwarzes Brett schreibt. Für neue Geräte ist das von Anfang an eingeschaltet.</li><li><strong>Umfragen: neue Umfrage und Erinnerung</strong>: nur für Mitglied, bei jeder neuen Umfrage und 24 Stunden vor ihrem Ende, wenn du noch nicht geantwortet hast. Für neue Geräte von Anfang an eingeschaltet.</li><li><strong>Geburtstage: am Tag selbst</strong>: nur für Mitglied, ab 7 Uhr am Geburtstag eines anderen Mitglieds, das seinen Geburtstag anderen zeigt (das Alter nur, wenn es freigegeben ist). Für neue Geräte von Anfang an eingeschaltet.</li><li><strong>Punkte: neue Einträge</strong> und <strong>Strafen: neue Einträge</strong>: nur mit Konto, nur deine eigenen. Bei Strafen stehen Betrag und Grund nur mit dem Schalter <strong>Strafen: Betrag und Grund in der Nachricht zeigen</strong> in der Nachricht, sonst nur ein Hinweis – gut, wenn andere deinen Sperrbildschirm sehen.</li><li><strong>Termine: neue und geänderte</strong>: wenn ein Termin dazukommt oder sich Zeit oder Ort ändern.</li><li><strong>Erinnerung am Vortag</strong>: einmal am Tag vor einem Termin, ab der Uhrzeit, die der Admin festlegt (üblich 18 Uhr), spätestens vier Stunden danach.</li><li><strong>News: neue Beiträge</strong>: wenn ein neuer Beitrag erscheint.</li></ul>
+<p>Ohne Konto gibt es nur die öffentlichen Termine und Neuigkeiten. Ohne Konto eingeschaltete Benachrichtigungen enden von selbst, wenn die App auf dem Gerät ein halbes Jahr lang nicht geöffnet wurde und keine Nachricht kam.</p>
+<h2>iPhone und iPad</h2>
+<p>Benachrichtigungen gibt es dort nur in der installierten App (ab iOS 16.4), nicht in Safari. Hol dir die App zuerst auf den Home-Bildschirm, siehe <a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a>, und öffne sie von dort.</p>
+<h2>Ausschalten</h2>
+<p>Unter <strong>Benachrichtigungen</strong> auf <strong>Benachrichtigungen ausschalten</strong> tippen. Meldest du dich in der App ab, schaltet sie die Benachrichtigungen deines Kontos auf diesem Gerät aus. Endet die Anmeldung anders (z. B. abgelaufen oder auf der Webseite abgemeldet), passiert das, sobald die App auf dem Gerät das nächste Mal geöffnet wird.</p>
+<h2>Es kommt nichts an?</h2>
+<ul><li>Hast du die Nachfrage abgelehnt, sind Benachrichtigungen für die Seite blockiert. Erlaube sie in den Einstellungen des Browsers (bzw. des Handys unter Mitteilungen) und lade die App neu.</li><li>Stromsparmodus und „Nicht stören“ halten Nachrichten manchmal zurück.</li><li>Admins sehen unter <strong>Einstellungen → Benachrichtigungen</strong>, ob der Server Nachrichten senden kann, und legen fest, ab wann die Erinnerung am Vortag kommt.</li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>
