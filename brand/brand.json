@@ -27,7 +27,8 @@
       "polls": "Umfragen",
       "birthdays": "Geburtstage",
       "inventory": "Inventar",
-      "directory": "Mitglieder"
+      "directory": "Mitglieder",
+      "offices": "Ämter"
     },
     "rank": "Dienstgrad"
   },
