@@ -26,7 +26,8 @@
       "board": "Schwarzes Brett",
       "polls": "Umfragen",
       "birthdays": "Geburtstage",
-      "inventory": "Inventar"
+      "inventory": "Inventar",
+      "directory": "Mitglieder"
     },
     "rank": "Dienstgrad"
   },
