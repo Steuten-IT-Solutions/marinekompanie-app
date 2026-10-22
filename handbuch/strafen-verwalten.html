@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Strafen verwalten – Handbuch der App der Marinekompanie Lank</title>
+<title>Strafen eintragen – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,13 +91,24 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Strafen verwalten</h1><p class="wenn">Nur, wenn Strafen eingeschaltet ist.</p><p>Wer die Rolle „Strafen verwalten“ oder eine Rolle mit diesem Recht hat, findet in der App den Bereich <strong>Verwaltung</strong> (unten in der Leiste, wenn es mehrere Bereiche gibt). Er beginnt mit einer Übersicht, in der jede Seite ein eigener Knopf mit Symbol ist; <strong>‹ Verwaltung</strong> führt von einer Seite zurück zur Übersicht.</p>
-<h2>Eintrag anlegen</h2>
-<ol><li><strong>Verwaltung → Strafen +</strong> öffnen. Für eine einzelne Person geht es auch auf ihrer Seite: Kachel <strong>Offen</strong> antippen; das Formular gilt dann nur für sie.</li><li>Betrag (z. B. 2,50, höchstens 1.000 € je Eintrag), Grund und Datum (heute vorausgewählt) eintragen.</li><li>Ein oder mehrere Mitglieder ankreuzen (die Suche hilft bei vielen Namen, <strong>Alle</strong> kreuzt alle gefundenen an) und <strong>Eintragen</strong> tippen.</li></ol>
-<p>Einträge gibt es nur für Mitglieder, nicht für Rollen ohne Mitgliederbereich (z. B. Anwärter) oder Gäste. Wer <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a> eingeschaltet hat, bekommt eine, sobald ein neuer Eintrag für ihn angelegt ist.</p>
-<h2>Bezahlt markieren und stornieren</h2>
-<p>Unter <strong>Verwaltung → Mitglieder</strong> das Mitglied öffnen, die Kachel <strong>Offen</strong> antippen und beim Eintrag <strong>Bezahlt</strong> tippen. Versehentlich markiert? <strong>Doch offen</strong> setzt ihn zurück. Ein falscher Eintrag verschwindet mit <strong>Stornieren</strong>.</p>
-<p>Oben unter <strong>Verwaltung → Strafen +</strong> steht, wie viel insgesamt offen ist; in der Mitgliederliste steht bei jedem Mitglied, wie viel bei ihm noch offen ist.</p>
+<h1>Strafen eintragen</h1><p class="wenn">Nur, wenn Strafen eingeschaltet ist.</p><p>Hier trägst du Strafen für ein oder mehrere Mitglieder auf einmal ein, z. B. für alle, die zu spät gekommen sind. Oben siehst du, wie viel insgesamt noch offen ist.</p>
+<figure class="hilfe-bild"><img src="bilder/strafen-verwalten.jpg" alt="Das Formular zum Eintragen mit dem offenen Gesamtbetrag" loading="lazy"><figcaption>Das Formular zum Eintragen mit dem offenen Gesamtbetrag</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf den Knopf <strong>Strafen +</strong>. Mit <strong>‹ Verwaltung</strong> kommst du zurück.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Offen gesamt: Strafen</strong>: wie viel bei allen zusammen noch offen ist (ohne Gäste).</li><li><strong>Betrag in €</strong>: z. B. 2,50.</li><li><strong>Datum</strong>: heute ist vorausgewählt.</li><li><strong>Grund</strong>: z. B. „Zu spät gekommen“.</li><li><strong>Mitglieder</strong>: alle Mitglieder zum Ankreuzen, mit <strong>Mitglied suchen …</strong>, <strong>Alle</strong> (bzw. <strong>Keine</strong>) und darunter, wie viele ausgewählt sind.</li><li><strong>Eintragen</strong>: speichert den Eintrag für alle Angekreuzten.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Einen Eintrag anlegen</h3>
+<ol><li>Trage den <strong>Betrag in €</strong> ein, z. B. 5,00.</li><li>Ändere das <strong>Datum</strong>, wenn es nicht heute war.</li><li>Trage den <strong>Grund</strong> ein.</li><li>Kreuze die Mitglieder an. Bei vielen Namen hilft die Suche; <strong>Alle</strong> kreuzt alle gefundenen an.</li><li>Tippe auf <strong>Eintragen</strong>. Unten erscheint kurz, für wie viele Mitglieder der Betrag eingetragen ist.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/strafen-verwalten-ausgefuellt.jpg" alt="Ausgefülltes Formular mit Betrag, Grund und einem ausgewählten Mitglied" loading="lazy"><figcaption>Ausgefülltes Formular mit Betrag, Grund und einem ausgewählten Mitglied</figcaption></figure>
+<h3>Vorschlag aus einer Anwesenheitsliste übernehmen</h3>
+<p>Wer zusätzlich die Anwesenheit erfasst, kann aus einer Anwesenheitsliste heraus Strafen eintragen. Dann öffnet sich dieses Formular mit einem Vorschlag:</p>
+<ol><li>Oben steht der Rückweg „‹ …“ mit dem Namen der Liste. Alle, die gefehlt haben, sind schon angekreuzt.</li><li>Der <strong>Grund</strong> heißt „Gefehlt: Name der Liste“, das <strong>Datum</strong> ist das der Liste. Trage den <strong>Betrag in €</strong> ein.</li><li>Prüfe die Auswahl und tippe auf <strong>Eintragen</strong>. Danach bist du wieder bei der Liste.</li></ol>
+<p>Anders als bei Punkte merkt sich die Liste nicht, wer schon einen Eintrag hat. Trägst du zweimal ein, gibt es zwei Einträge.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Ein Eintrag darf höchstens 1.000 € betragen. Betrag und Grund sind Pflicht.</li><li>Strafen gibt es nur für Mitglieder, keine Gäste.</li><li>Wer Benachrichtigungen eingeschaltet hat, bekommt eine Nachricht zum neuen Eintrag.</li><li>Als bezahlt markierst du einen Eintrag auf der Seite des Mitglieds. Dort stornierst du auch falsche Einträge.</li><li>In der Mitgliederliste der Verwaltung steht bei jedem Mitglied, wie viel bei ihm noch offen ist.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="mitglied-strafen.html" data-seite="mitglied-strafen">Strafen eines Mitglieds</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

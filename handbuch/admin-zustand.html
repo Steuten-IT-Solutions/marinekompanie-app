@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zustand und Statusmeldungen – Handbuch der App der Marinekompanie Lank</title>
+<title>Zustand und Updates – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,20 +91,40 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Zustand und Statusmeldungen</h1><p>Unter <strong>Verwaltung → Einstellungen → Zustand und Updates</strong> zeigt die Karte <strong>Zustand der App</strong> mit einer Ampel, ob alles läuft. Jede Zeile hat einen kurzen Text, der sagt, was los ist und was zu tun ist. Mit <strong>Zustand neu laden</strong> holst du den aktuellen Stand.</p>
-<h2>Die Zeilen</h2>
-<ul><li><strong>Updates</strong>: ob die App aktuell ist, ob ein Update ansteht oder fehlgeschlagen ist. Mehr unter <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Updates und Datensicherung</a>.</li><li><strong>Galerie</strong>: wann der letzte Abgleich mit Google Drive war, ob er geklappt hat und ob Bilder noch aufbereitet werden oder sich nicht laden ließen.</li><li><strong>Kalender</strong>: ob und wie der Kalender eingerichtet ist und ob die Verbindung mit Google ihn lesen darf.</li><li><strong>Datensicherung</strong>: wann zuletzt eine Sicherung heruntergeladen bzw. in Google Drive abgelegt wurde; gelb nach 30 Tagen ohne Sicherung oder wenn das Hochladen nach Google Drive scheitert.</li><li><strong>Server</strong>: PHP-Version und Datenbank; gelb, wenn auf dem Webspace weniger als 200 MB frei sind.</li><li><strong>Push-Benachrichtigungen</strong>: wie viele Geräte angemeldet sind, oder was dem Server fehlt, um Benachrichtigungen zu senden.</li></ul>
-<p>Ohne WordPress kommen zwei Zeilen dazu:</p>
-<ul><li><strong>Schutz der Daten</strong>: ob die Datenbank und die Zugangsdaten aus dem Internet abrufbar wären. Ist diese Zeile rot, lass das sofort beim Hoster beheben.</li><li><strong>Hintergrundaufgaben</strong>: ob ein Cronjob beim Hoster die Aufgaben erledigt (Abgleich von Galerie und Kalender, Updates) oder ob sie nur nach Seitenaufrufen laufen. Hier steht auch die Adresse für den Cronjob.</li></ul>
-<h2>Die Farben</h2>
-<ul><li><strong>Grün</strong>: alles in Ordnung.</li><li><strong>Gelb</strong> (in der Farbe eurer App): etwas sollte erledigt werden, z. B. eine neue Datensicherung.</li><li><strong>Rot</strong>: etwas funktioniert nicht; der Text sagt, was zu tun ist.</li><li><strong>Grau</strong>: ausgeschaltet, noch nicht eingerichtet oder in dieser Installation nicht verfügbar.</li></ul>
-<p>Was du bei typischen Meldungen tun kannst, steht unter <a href="haeufige-probleme.html" data-seite="haeufige-probleme">Häufige Probleme</a>. Ist bei euch eine Kontaktadresse der Betreuer hinterlegt, steht sie unter der Ampel bei <strong>Hilfe</strong>.</p>
-<h2>Statusmeldungen an die Betreuer</h2>
-<p>Wenn du zustimmst, schickt die App den Betreuern der App stündlich ein kurzes Lebenszeichen (u. a. Version, Farbe der Ampel je Zeile, Fehlercodes der letzten 24 Stunden mit Ursache, z. B. „Kalender-Link: HTTP 404“ oder „Zeitüberschreitung“) und meldet schwere Fehler sofort, z. B. ein gescheitertes Update. Namen, Inhalte und Fehlertexte werden nie gesendet. So sehen die Betreuer Probleme früh.</p>
-<p>Bei der Einrichtung ist der Haken dafür schon gesetzt; du kannst ihn dort entfernen oder später unter <strong>Zustand und Updates</strong> den Schalter <strong>Statusmeldungen an die Betreuer der App senden</strong> umstellen. Dort siehst du unter <strong>Was genau gesendet wird</strong>, welche Angaben das Lebenszeichen enthält, und wann die letzte Meldung ging. Die Zustimmung lässt sich jederzeit zurücknehmen; dann werden auch die gezählten Fehler gelöscht. Fehlt der Schalter, sind Statusmeldungen in eurer App nicht vorgesehen.</p>
-<h2>Fehlerprotokoll</h2>
-<p>Unter <strong>Zustand und Updates</strong> steht außerdem das <strong>Fehlerprotokoll</strong>: die Fehler der letzten 14 Tage (höchstens 50) mit dem vollständigen Fehlertext, auch ohne Zustimmung zu den Statusmeldungen. Es bleibt auf eurem Server und wird nicht gesendet. Gleiche Fehler direkt hintereinander stehen nur einmal da, mit Anzahl und Zeitraum. Adressen sind auf den Server gekürzt (so bleibt z. B. ein geheimer Kalender-Link geheim).</p>
-<p>Sollen die Betreuer bei einem Problem helfen, tippe auf <strong>Kopieren</strong> und schick ihnen den Text. Sieh ihn vorher kurz durch: Fehlertexte können Namen oder Inhalte enthalten, z. B. wenn ein Datenbankfehler den Wert eines Eintrags nennt. <strong>Leeren</strong> löscht das Protokoll, z. B. nachdem ein Problem behoben ist.</p>
+<h1>Zustand und Updates</h1><p>Hier siehst du auf einen Blick, ob die App rund läuft, welche Version installiert ist und ob es Updates gibt. Außerdem findest du hier das Fehlerprotokoll und die Statusmeldungen an die Betreuer der App.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-zustand.jpg" alt="Die Seite Zustand und Updates mit der Ampel" loading="lazy"><figcaption>Die Seite Zustand und Updates mit der Ampel</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Zustand und Updates</strong>.</p>
+<h2>Was du hier siehst</h2>
+<h3>Zustand der App</h3>
+<p>Eine Ampel mit einer Zeile je Thema. Jede Zeile sagt in einem kurzen Text, was los ist und was zu tun ist.</p>
+<ul><li><strong>Updates</strong>: ob die App aktuell ist, ob ein Update ansteht oder fehlgeschlagen ist.</li><li><strong>Galerie</strong>: wann der letzte Abgleich mit Google Drive war, ob er geklappt hat und ob Bilder noch aufbereitet werden oder sich nicht laden ließen.</li><li><strong>Kalender</strong>: ob und wie der Kalender eingerichtet ist und ob die Verbindung mit Google ihn lesen darf.</li><li><strong>Datensicherung</strong>: wann zuletzt eine Sicherung heruntergeladen bzw. in Google Drive abgelegt wurde.</li><li><strong>Server</strong>: welche PHP-Version und Datenbank laufen; gelb, wenn auf dem Webspace weniger als 200 MB frei sind.</li><li><strong>Push-Benachrichtigungen</strong>: wie viele Geräte angemeldet sind, oder was dem Server fehlt, um Benachrichtigungen zu senden.</li><li>Nur ohne WordPress: <strong>Schutz der Daten</strong> (ob Datenbank und Zugangsdaten aus dem Internet abrufbar wären; ist die Zeile rot, lass das sofort beim Hoster beheben) und <strong>Hintergrundaufgaben</strong> (ob ein Cronjob beim Hoster die Aufgaben erledigt, mit der Adresse dafür).</li></ul>
+<p>Die Farben: <strong>Grün</strong> heißt alles in Ordnung. <strong>Gelb</strong> heißt, etwas sollte erledigt werden, z. B. eine neue Datensicherung. <strong>Rot</strong> heißt, etwas funktioniert nicht. <strong>Grau</strong> heißt ausgeschaltet, noch nicht eingerichtet oder in dieser Installation nicht verfügbar. Ist bei euch eine Kontaktadresse der Betreuer hinterlegt, steht sie darunter bei <strong>Hilfe</strong>.</p>
+<h3>Updates</h3>
+<ul><li><strong>Installiert: …</strong> mit dem Zeitpunkt der letzten Prüfung und dem Verweis <strong>Was ist neu</strong>.</li><li><strong>✓ Die App ist auf dem neuesten Stand.</strong> oder <strong>Neue Version: …</strong> mit dem Knopf <strong>Jetzt auf … aktualisieren</strong>.</li><li><strong>Nach Updates suchen</strong> und <strong>Zustand neu laden</strong>.</li><li><strong>Updates automatisch einspielen (empfohlen)</strong> und <strong>Vorabversionen erhalten (zum Testen)</strong>.</li><li><strong>Auf eine ältere Version zurück</strong>: zum Aufklappen, wenn es frühere Versionen gibt.</li><li><strong>Statusmeldungen an die Betreuer der App senden</strong>: nur, wenn eure App Statusmeldungen vorsieht.</li></ul>
+<h3>Fehlerprotokoll</h3>
+<p>Die Fehler der letzten 14 Tage (höchstens 50) mit Zeitpunkt, Art des Fehlers und vollständigem Fehlertext, mit den Knöpfen <strong>Kopieren</strong> und <strong>Leeren</strong>. Gab es keine, steht dort <strong>Keine Fehler in den letzten 14 Tagen.</strong></p>
+<figure class="hilfe-bild"><img src="bilder/admin-zustand-fehlerprotokoll.jpg" alt="Das Fehlerprotokoll mit zwei Einträgen" loading="lazy"><figcaption>Das Fehlerprotokoll mit zwei Einträgen</figcaption></figure>
+<h2>So gehst du vor</h2>
+<h3>Den aktuellen Stand holen</h3>
+<ol><li>Tippe auf <strong>Zustand neu laden</strong>.</li></ol>
+<h3>Eine neue Version einspielen</h3>
+<ol><li>Tippe auf <strong>Nach Updates suchen</strong>. Die App sucht ohnehin einmal am Tag selbst.</li><li>Gibt es eine neue Version, tippe auf <strong>Jetzt auf … aktualisieren</strong>. Das dauert bis zu zwei Minuten.</li><li>Danach lädt die App neu.</li></ol>
+<p>Kann die neue Version auf eurem Server nicht laufen (z. B. zu alte PHP- oder WordPress-Version, fehlende Schreibrechte), steht der Grund darüber und der Knopf ist gesperrt. Das muss zuerst behoben werden.</p>
+<h3>Eine neue Hauptversion einspielen</h3>
+<ol><li>Lies die Hinweise zur Version (unter <strong>Was ist neu</strong> bzw. von den Betreuern der App).</li><li>Tippe auf <strong>Hauptversion einspielen</strong> und bestätige die Rückfrage.</li></ol>
+<p>Eine neue Hauptversion spielt die App nie automatisch ein. Vorher sichert sie die Daten. Zurück auf die bisherige Hauptversion geht es danach nicht per Knopf, nur mit Hilfe der Betreuer.</p>
+<h3>Auf eine ältere Version zurückgehen</h3>
+<ol><li>Tippe auf <strong>Auf eine ältere Version zurück</strong>.</li><li>Wähle bei <strong>Version</strong> eine frühere Version derselben Hauptversion.</li><li>Tippe auf <strong>Zurückrollen</strong> und bestätige die Rückfrage.</li></ol>
+<p>Die Version, von der du kommst, spielt die App danach nicht mehr automatisch ein, erst wieder die nächste neuere.</p>
+<h3>Das Fehlerprotokoll an die Betreuer schicken</h3>
+<ol><li>Sieh das Protokoll kurz durch: Fehlertexte können Namen oder Inhalte enthalten.</li><li>Tippe auf <strong>Kopieren</strong> und füge den Text in eine Nachricht an die Betreuer ein. Klappt das Kopieren nicht, zeigt die App den Text zum Markieren.</li><li>Ist das Problem behoben, kannst du mit <strong>Leeren</strong> das Protokoll löschen.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li><strong>Automatische Updates:</strong> Solange <strong>Updates automatisch einspielen (empfohlen)</strong> an ist, spielt die App neue Versionen derselben Hauptversion selbst ein. Mit WordPress kann die Webseite automatische Updates sperren; dann steht das hier, und du spielst neue Versionen von Hand ein.</li><li><strong>Vorsorge:</strong> Vor Updates mit Änderungen an der Datenbank und vor einer neuen Hauptversion sichert die App die Daten automatisch auf dem Server; die letzten fünf dieser Sicherungen bleiben. Schlägt ein Update fehl, läuft die bisherige Version weiter und der Grund steht hier.</li><li><strong>Zurückgezogene Version:</strong> Wird eine fehlerhafte Version zurückgezogen, wechselt die App von selbst auf eine geprüfte Version (außer automatische Updates sind gesperrt); mit <strong>Jetzt auf … wechseln</strong> geht das sofort. Gibt es noch keine geprüfte Version, meldest du dich bei den Betreuern der App.</li><li><strong>Vorabversionen:</strong> Mit <strong>Vorabversionen erhalten (zum Testen)</strong> bekommt diese Installation jede neue Version, sobald sie gebaut ist, noch bevor sie für alle freigegeben wird. Das ist für eine Testseite gedacht. Schaltest du es aus, bleibt die jetzige Version installiert, bis eine neuere für alle freigegeben ist.</li><li><strong>Statusmeldungen:</strong> Wenn du zustimmst, schickt die App den Betreuern stündlich ein kurzes Lebenszeichen (u. a. Version, Farbe der Ampel je Zeile, Fehlercodes mit Ursache, z. B. „Kalender: HTTP 404“) und meldet schwere Fehler sofort. Namen, Inhalte und Fehlertexte werden nie gesendet. Was genau gesendet wird, zeigt <strong>Was genau gesendet wird (Beispiel: Lebenszeichen)</strong>; darüber steht, wann die letzte Meldung ging. Nimmst du die Zustimmung zurück, werden auch die gezählten Fehler gelöscht.</li><li><strong>Fehlerprotokoll:</strong> Es bleibt auf eurem Server und wird nicht gesendet, auch ohne Zustimmung zu den Statusmeldungen. Gleiche Fehler direkt hintereinander stehen nur einmal da, mit Anzahl und Zeitraum. Adressen sind auf den Server gekürzt; so bleibt z. B. eine geheime Kalender-Adresse geheim.</li><li>Bekommt eure Installation keine Updates über die App, steht im Abschnitt <strong>Updates</strong> nur die installierte Version.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Ein <em>Cronjob</em> ist ein Auftrag im Kundenmenü eures Hosters, der eine Adresse regelmäßig aufruft. Ohne ihn erledigt die App ihre Hintergrundaufgaben (Abgleich von Galerie und Kalender, Updates) nach Seitenaufrufen. Zuverlässiger ist ein Cronjob, der alle 15 Minuten die Adresse aufruft, die bei <strong>Hintergrundaufgaben</strong> steht.</p>
+<p>Was du bei typischen Meldungen tun kannst, steht unter <a href="haeufige-probleme.html" data-seite="haeufige-probleme">Häufige Probleme</a>.</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-neuerungen.html" data-seite="admin-neuerungen">Was ist neu</a></li><li><a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Datensicherung</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

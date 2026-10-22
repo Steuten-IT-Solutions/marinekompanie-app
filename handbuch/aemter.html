@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,16 +91,21 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Ämter</h1><p class="wenn">Nur, wenn Ämter eingeschaltet ist.</p><p>Unter <strong>Mitglieder</strong> (unten in der Leiste) steht neben der Mitgliederliste der Abschnitt <strong>Ämter</strong>: wer welches Amt wann hatte, auch frühere Inhaber, als Zeitstrahl. Sehen kann ihn jeder, auch ohne Anmeldung. Oben wechselst du zwischen <strong>Mitglieder</strong> und <strong>Ämter</strong>; die App merkt sich auf diesem Gerät, was du zuletzt gewählt hast. Nutzt die Kompanie keine Mitgliederliste, heißt der Tab <strong>Ämter</strong>. Mit WordPress zeigt der Shortcode <code>[kompanie_aemter]</code> die Ämter auch auf der Webseite, <code>[kompanie_aemter gruppe=&quot;…&quot;]</code> nur die Ämter einer Gruppe.</p>
-<h2>Ämter und Chronik</h2>
-<p>Die Ämter stehen nach Gruppen geordnet. Jede Karte zeigt zugeklappt ein Siegel mit den Anfangsbuchstaben des Amts, wer es gerade hat (mit Fotos), sonst die letzte Amtszeit, und seit wann die Chronik reicht. Ein Tipp auf die Karte klappt sie auf, <strong>Alle aufklappen</strong> öffnet alle Karten auf einmal.</p>
-<p>Aufgeklappt stehen oben unter <strong>Im Amt</strong> alle, die das Amt gerade haben, mit Foto und wie lange schon. Darunter folgt unter <strong>Frühere</strong> die Chronik: links das Jahr, in dem die Amtszeit begann (darunter „bis …“), rechts eine Karte mit den Personen, der Dauer und einem kurzen Zusatz, falls es einen gibt (z. B. „Unter …“). Die neueste Amtszeit steht oben; bei langen Listen gliedern Marken wie <strong>2000er</strong> die Jahrzehnte. Ein einzelnes Jahr, z. B. eine Ehrung, trägt einen Stern und den Hinweis <strong>Ehrung</strong>.</p>
-<p>Auf dem Handy steht die Chronik in einer Spalte, auf breiten Bildschirmen abwechselnd links und rechts der Linie.</p>
-<h2>Ämter einer Person</h2>
-<p>Steht eine Person auch in der Mitgliederliste, siehst du ihr Foto, und ein Tipp auf ihren Namen (unter <strong>Im Amt</strong> oder in der Chronik) öffnet ihre Seite mit allen ihren Ämtern als Zeitstrahl. Dorthin kommst du auch, wenn du in der Mitgliederliste auf die Person tippst. Frühere Mitglieder ohne Konto stehen nur mit ihrem Namen da.</p>
-<p>Deine eigenen Ämter findest du als Mitglied auch unter <strong>Meins → Übersicht</strong> ganz unten.</p>
-<h2>Für Admins</h2>
-<p>Die Ämter sind ein eigener Bereich: <strong>Einstellungen → Bereiche → Ämter</strong>. Gepflegt werden sie unter <strong>Verwaltung → Ämter</strong> (siehe <strong>Ämter verwalten</strong> im Handbuch).</p>
+<h1>Ämter</h1><p class="wenn">Nur, wenn Ämter eingeschaltet ist.</p><p>Unter <strong>Ämter</strong> siehst du, wer welches Amt gerade hat und wer es früher hatte – als Zeitstrahl, der weit zurückreichen kann. Sehen kann ihn jeder, auch ohne Anmeldung.</p>
+<figure class="hilfe-bild"><img src="bilder/aemter.jpg" alt="Ämter nach Gruppen" loading="lazy"><figcaption>Ämter nach Gruppen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten in der Leiste auf <strong>Mitglieder</strong> und oben auf <strong>Ämter</strong>. Nutzt die Kompanie keine Mitgliederliste, heißt der Knopf unten gleich <strong>Ämter</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Alle aufklappen</strong> (bzw. <strong>Alle zuklappen</strong>): öffnet oder schließt alle Karten auf einmal.</li><li><strong>Gruppen</strong>, z. B. Vorstand: Darunter stehen ihre Ämter.</li><li><strong>Je Amt eine Karte</strong>: ein Siegel mit den Anfangsbuchstaben des Amts, wer es gerade hat (mit Fotos) – sonst „zuletzt“ und die letzte Amtszeit – und seit wann die Chronik reicht.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Die Chronik eines Amts ansehen</h3>
+<ol><li>Tippe auf die Karte des Amts. Sie klappt auf.</li><li>Oben unter <strong>Im Amt</strong> stehen alle, die das Amt gerade haben, mit Foto und wie lange schon.</li><li>Darunter folgt unter <strong>Frühere</strong> die Chronik: links das Jahr, in dem die Amtszeit begann (darunter „bis …“), rechts die Personen, die Dauer und ein kurzer Zusatz, falls es einen gibt.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/aemter-chronik.jpg" alt="Aufgeklappte Chronik eines Amts" loading="lazy"><figcaption>Aufgeklappte Chronik eines Amts</figcaption></figure>
+<h3>Die Ämter einer Person sehen</h3>
+<ol><li>Tippe in der Chronik oder unter <strong>Im Amt</strong> auf ihren Namen.</li><li>Es öffnet sich ihre Seite mit allen ihren Ämtern als Zeitstrahl.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Die neueste Amtszeit steht oben. Bei langen Listen gliedern Marken wie <strong>2000er</strong> die Jahrzehnte. Ein einzelnes Jahr, z. B. eine Ehrung, trägt einen Stern und den Hinweis <strong>Ehrung</strong>.</li><li>Antippen lassen sich nur Personen, die in der Mitgliederliste stehen. Frühere Mitglieder ohne Konto stehen nur mit ihrem Namen da.</li><li>Auf dem Handy steht die Chronik in einer Spalte, auf breiten Bildschirmen abwechselnd links und rechts der Linie.</li><li>Deine eigenen Ämter findest du als Mitglied auch unter <strong>Meins</strong>.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Mit WordPress zeigt der Shortcode <code>[kompanie_aemter]</code> die Ämter auch auf der Webseite, <code>[kompanie_aemter gruppe=&quot;…&quot;]</code> nur die Ämter einer Gruppe.</p>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

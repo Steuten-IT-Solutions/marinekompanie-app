@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,20 +91,19 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Umfragen</h1><p class="wenn">Nur, wenn Umfragen eingeschaltet ist.</p><p>Mit <strong>Umfragen</strong> fragt die Marinekompanie Lank alle Mitglied nach ihrer Meinung, z. B. „Grillfest am Samstag oder Sonntag?“. Jede Umfrage hat genau eine Frage: mit einer Antwort, mit mehreren Antworten oder mit freiem Text. Rollen ohne Mitgliederbereich (z. B. Anwärter) nehmen nicht teil.</p>
-<h2>Wo du Umfragen findest</h2>
-<p>Laufende Umfragen stehen am <strong>Schwarzes Brett</strong> (siehe <a href="schwarzes-brett.html" data-seite="schwarzes-brett">Schwarzes Brett</a>). Solange du noch nicht geantwortet hast, erscheint eine neue Umfrage auch im Banner oben auf jeder Seite; <strong>Teilnehmen</strong> öffnet sie. Mit <strong>×</strong> blendest du sie auf diesem Gerät aus. Wird die Umfrage danach geändert (z. B. ein neues Ende), erscheint sie wieder.</p>
-<p>Auf der Seite des Bretts stehen alle laufenden Umfragen mit dem Hinweis <strong>offen</strong> oder <strong>beantwortet</strong> und den Knöpfen <strong>Teilnehmen</strong> bzw. <strong>Antwort ansehen</strong>. <strong>Beendete Umfragen</strong> öffnet die Liste aller Umfragen: oben die laufenden, darunter die beendeten, mit Ergebnis, sobald es für dich sichtbar ist.</p>
-<h2>Namentlich oder anonym</h2>
-<p>Bevor du antwortest, zeigt die Umfrage deutlich an, wie sie angelegt wurde:</p>
-<ul><li><strong>Namentlich</strong>: Wer die Ergebnisse sehen darf, sieht auch, wer was geantwortet hat.</li><li><strong>Anonym</strong>: Deine Antwort wird niemandem angezeigt, auch nicht den Verwaltern. Sie zählt nur in den Ergebnissen mit, ohne Namen. Nur du selbst siehst, was du geantwortet hast.</li></ul>
-<p>Außerdem steht dort, <strong>wann die Ergebnisse sichtbar werden</strong>: sobald du geantwortet hast (nach dem Ende dann für alle Mitglied), erst nach dem Ende oder nur für die Verwalter der Umfragen. Das legt fest, wer die Umfrage anlegt, und es lässt sich nach der ersten Antwort nicht mehr ändern.</p>
-<h2>Antworten, ändern, zurückziehen</h2>
-<p>Wähle deine Antwort und tippe <strong>Antwort senden</strong>. Solange die Umfrage läuft, kannst du sie mit <strong>Antwort ändern</strong> ändern oder mit <strong>Zurückziehen</strong> ganz zurücknehmen. Ist die Umfrage beendet (zum angegebenen Ende oder vorzeitig), geht das nicht mehr.</p>
-<h2>Ergebnisse</h2>
-<p>Über den Ergebnissen steht, wie viele teilgenommen haben. Bei Auswahl-Umfragen siehst du je Antwort einen Balken mit Anzahl und Prozent (Anteil der Teilnehmenden; bei mehreren Antworten zusammen auch über 100 %). Bei Freitext stehen alle Antworten als Liste da. Bei namentlichen Umfragen stehen die Namen dabei.</p>
-<h2>Benachrichtigung</h2>
-<p>Bei einer neuen Umfrage und 24 Stunden vor ihrem Ende (nur, wenn du noch nicht geantwortet hast) kommt eine Benachrichtigung, wenn du die Art <strong>Umfragen: neue Umfrage und Erinnerung</strong> für das Gerät eingeschaltet hast (siehe <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>).</p>
+<h1>Umfragen</h1><p class="wenn">Nur, wenn Umfragen eingeschaltet ist.</p><p>Mit <strong>Umfragen</strong> fragt die Marinekompanie Lank alle Mitglied nach ihrer Meinung, z. B. „Grillfest am Samstag oder Sonntag?“. Diese Seite listet alle Umfragen: die laufenden und die beendeten.</p>
+<figure class="hilfe-bild"><img src="bilder/umfragen.jpg" alt="Die Liste aller Umfragen, oben die laufenden, darunter die beendeten" loading="lazy"><figcaption>Die Liste aller Umfragen, oben die laufenden, darunter die beendeten</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Öffne das Schwarzes Brett (im Banner oben auf <strong>Brett öffnen</strong> tippen) und tippe unter <strong>Laufende Umfragen</strong> auf <strong>Beendete Umfragen</strong>. Aus einer geöffneten Umfrage kommst du mit <strong>Alle Umfragen</strong> hierher.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Laufend</strong>: alle Umfragen, auf die du noch antworten kannst. Gibt es keine, steht dort <strong>Zurzeit läuft keine Umfrage.</strong></li><li><strong>Beendete Umfragen</strong>: alle Umfragen, die zu Ende sind.</li><li>Bei jeder Umfrage: die Frage, <strong>Läuft bis …</strong> (bzw. <strong>Läuft, bis sie beendet wird</strong>) oder <strong>Beendet …</strong>, dazu <strong>offen</strong>, <strong>beantwortet</strong> oder <strong>nicht teilgenommen</strong>. Darfst du die Ergebnisse schon sehen, steht dort auch die Zahl der Teilnahmen.</li><li><strong>Umfragen verwalten</strong>: nur, wenn du Umfragen verwalten darfst.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Eine Umfrage öffnen</h3>
+<ol><li>Tippe auf die Umfrage.</li><li>Es öffnet sich die Seite der Umfrage. Dort antwortest du oder siehst deine Antwort und die Ergebnisse (siehe <a href="umfrage-beantworten.html" data-seite="umfrage-beantworten">Umfrage beantworten</a>).</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Jede Umfrage hat genau eine Frage: mit einer Antwort, mit mehreren Antworten oder mit freiem Text.</li><li>Laufende Umfragen stehen auch am Schwarzes Brett. Solange du noch nicht geantwortet hast, erscheint eine Umfrage außerdem im Banner oben auf jeder Seite, mit dem Knopf <strong>Teilnehmen</strong>.</li><li>Bei einer neuen Umfrage und 24 Stunden vor ihrem Ende (nur, wenn du noch nicht geantwortet hast) bekommst du eine Benachrichtigung, wenn du die Art <strong>Umfragen: neue Umfrage und Erinnerung</strong> für dein Gerät eingeschaltet hast. Ein Tipp darauf öffnet die Umfrage.</li><li>An Umfragen nehmen nur Mitglied teil, nicht z. B. Anwärter.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="umfrage-beantworten.html" data-seite="umfrage-beantworten">Umfrage beantworten</a></li><li><a href="schwarzes-brett.html" data-seite="schwarzes-brett">Schwarzes Brett</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

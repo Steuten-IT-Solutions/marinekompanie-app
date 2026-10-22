@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Öffentliche Termine pflegen – Handbuch der App der Marinekompanie Lank</title>
+<title>Öffentliche Termine verwalten – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,13 +91,25 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Öffentliche Termine pflegen</h1><p class="wenn">Nur, wenn Termine eingeschaltet ist.</p><p>Öffentliche Termine sehen alle ohne Anmeldung in der App und (mit WordPress) über den Shortcode <code>[kompanie_termine]</code> auch auf der Webseite. Ist der Bereich Kalender eingeschaltet, sehen Mitglied und Personen mit dem internen Kalender (z. B. Anwärter) unter <strong>Termine</strong> stattdessen den Kalender der Kompanie mit allen Terminen; tragt öffentliche Termine dann auch dort ein.</p>
-<h2>Anlegen</h2>
-<ol><li>Unter <strong>Termine</strong> auf <strong>Öffentliche Termine verwalten</strong> tippen.</li><li><strong>+ Öffentlichen Termin anlegen</strong> tippen.</li><li><strong>Titel</strong> und <strong>Datum</strong> sind Pflicht. Freiwillig sind <strong>Bis</strong> (für mehrtägige Termine), <strong>Beginn</strong> und <strong>Ende</strong> (Uhrzeit), <strong>Ort</strong>, <strong>Beschreibung</strong> und ein <strong>Link</strong>. Ohne Uhrzeit gilt der Termin als ganztägig. Ein Ende braucht auch einen Beginn, und der Link muss mit http:// oder https:// beginnen.</li><li><strong>Speichern</strong> tippen.</li></ol>
-<p>Darunter stehen die kommenden öffentlichen Termine, jeder mit <strong>Bearbeiten</strong> und <strong>Löschen</strong>. Vergangene Termine verschwinden von selbst aus der Liste.</p>
-<h2>Benachrichtigungen</h2>
-<p>Wer ohne Kalender die öffentlichen Termine sieht (z. B. Gäste) und Benachrichtigungen für Termine eingeschaltet hat, bekommt bei einem neuen Termin „Neuer Termin“. Änderst du später Datum, Uhrzeit oder Ort, kommt „Termin geändert“; Änderungen nur am Titel oder an der Beschreibung lösen keine Benachrichtigung aus. Für vergangene Termine kommt nichts. Mehr dazu unter <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
-<p class="hinweis">Die internen Termine für Mitglied kommen nicht von hier, sondern aus dem Kalender der Kompanie (Bereich Kalender). So sehen alle die Termine: <a href="termine-und-kalender.html" data-seite="termine-und-kalender">Termine und Kalender</a>.</p>
+<h1>Öffentliche Termine verwalten</h1><p class="wenn">Nur, wenn Termine eingeschaltet ist.</p><p>Hier legst du die öffentlichen Termine der Marinekompanie Lank an, änderst und löschst sie. Diese Termine sieht jeder in der App, auch ohne Anmeldung.</p>
+<figure class="hilfe-bild"><img src="bilder/termine-pflegen.jpg" alt="Öffentliche Termine verwalten mit dem Knopf zum Anlegen und der Liste der kommenden Termine" loading="lazy"><figcaption>Öffentliche Termine verwalten mit dem Knopf zum Anlegen und der Liste der kommenden Termine</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Termine</strong> und dann oben auf <strong>Öffentliche Termine verwalten</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>‹ Zu den Terminen</strong>: zurück zu <strong>Termine</strong>.</li><li><strong>+ Öffentlichen Termin anlegen</strong>: öffnet das Formular für einen neuen Termin.</li><li><strong>Kommende öffentliche Termine</strong>: alle kommenden Termine mit Datum, Uhrzeit und Ort, jeder mit <strong>Bearbeiten</strong> und <strong>Löschen</strong>.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Einen Termin anlegen</h3>
+<ol><li>Tippe auf <strong>+ Öffentlichen Termin anlegen</strong>.</li><li>Trage <strong>Titel</strong> und <strong>Datum</strong> ein. Beides ist Pflicht.</li><li>Dauert der Termin mehrere Tage, trage unter <strong>Bis (optional)</strong> den letzten Tag ein.</li><li>Trage bei Bedarf <strong>Beginn (optional)</strong> und <strong>Ende (optional)</strong> ein. Ohne Uhrzeit gilt der Termin als ganztägig. Ein Ende braucht auch einen Beginn.</li><li>Ergänze <strong>Ort</strong>, <strong>Beschreibung</strong> und einen <strong>Link (optional)</strong>, wenn du magst. Der Link muss mit http:// oder https:// beginnen.</li><li>Tippe auf <strong>Speichern</strong>. Es erscheint „Termin angelegt“.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/termine-pflegen-formular.jpg" alt="Ausgefülltes Formular „Neuer öffentlicher Termin“" loading="lazy"><figcaption>Ausgefülltes Formular „Neuer öffentlicher Termin“</figcaption></figure>
+<h3>Einen Termin ändern</h3>
+<ol><li>Tippe beim Termin auf <strong>Bearbeiten</strong>. Oben öffnet sich das Formular <strong>Termin bearbeiten</strong>.</li><li>Ändere die Angaben.</li><li>Tippe auf <strong>Speichern</strong>. Mit <strong>Abbrechen</strong> bleibt alles, wie es war.</li></ol>
+<h3>Einen Termin löschen</h3>
+<ol><li>Tippe beim Termin auf <strong>Löschen</strong>.</li><li>Bestätige die Rückfrage. Der Termin ist sofort weg.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Vergangene Termine verschwinden von selbst aus der Liste.</li><li>Nutzt die Marinekompanie Lank auch ihren internen Kalender, sehen angemeldete Mitglied und Personen mit dem internen Kalender (z. B. Anwärter) unter <strong>Termine</strong> stattdessen diesen Kalender. Trag öffentliche Termine, die auch sie sehen sollen, deshalb zusätzlich dort ein. Die internen Termine kommen nicht von hier, sondern aus diesem Kalender.</li><li>Wer Benachrichtigungen für Termine eingeschaltet hat und die öffentlichen Termine sieht (z. B. Gäste), bekommt bei einem neuen Termin „Neuer Termin“. Änderst du später Datum, Uhrzeit oder Ort, kommt „Termin geändert“. Änderungen nur am Titel oder an der Beschreibung lösen keine Benachrichtigung aus, und für vergangene Termine kommt nichts.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Läuft die App über eine WordPress-Webseite, zeigt der Shortcode <code>[kompanie_termine]</code> die öffentlichen Termine auch auf der Webseite.</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="termine-und-kalender.html" data-seite="termine-und-kalender">Termine</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

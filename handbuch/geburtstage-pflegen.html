@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Geburtstage pflegen – Handbuch der App der Marinekompanie Lank</title>
+<title>Geburtstag eines Mitglieds – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,14 +91,21 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Geburtstage pflegen</h1><p class="wenn">Nur, wenn Geburtstage eingeschaltet ist.</p><p>Jedes Mitglied trägt seinen Geburtstag selbst unter <strong>Meins → Konto</strong> ein. Wer Mitglieder anlegen darf, kann das Datum auch für andere eintragen, ändern oder entfernen – etwa wenn jemand die App nicht nutzt oder um eine bestehende Liste zu übernehmen.</p>
-<h2>In den Mitgliedsdetails</h2>
-<p><strong>Verwaltung → Mitglieder →</strong> Mitglied antippen und auf seiner Seite unter den Kacheln <strong>Geburtstag</strong> antippen (wie die Mitgliederliste aufgebaut ist, steht unter <a href="mitglieder-anlegen.html" data-seite="mitglieder-anlegen">Mitglieder anlegen</a>). Dort steht das eingetragene Datum oder „Nicht eingetragen.“. Wähle <strong>Tag</strong>, <strong>Monat</strong> und, wenn bekannt, das <strong>Jahr</strong> und tippe <strong>Geburtstag speichern</strong>; <strong>Entfernen</strong> löscht ihn nach einer Rückfrage.</p>
-<p>Ob <strong>Anderen Mitgliedern zeigen</strong> und <strong>Alter anzeigen</strong> an oder aus sind und (mit der Liste <strong>Mitglieder</strong>) ob der Geburtstag auf der Seite der Person steht, siehst du dort nur zur Information. Das gehört der Person selbst: Du kannst es nicht ändern, und ein neu eingetragener Geburtstag ist zunächst sichtbar, ohne Alter und nicht auf ihrer Seite.</p>
-<h2>Beim Anlegen</h2>
-<p>Bei <strong>+ Mitglied anlegen</strong> und bei <strong>Mehrere auf einmal anlegen</strong> gibt es je Person ein freiwilliges Feld <strong>Geburtstag</strong> (Tag, Monat, Jahr freiwillig). Ein ungültiges Datum (z. B. 31. Februar oder ein Tag in der Zukunft) meldet die App, bevor jemand angelegt wird.</p>
+<h1>Geburtstag eines Mitglieds</h1><p class="wenn">Nur, wenn Geburtstage eingeschaltet ist.</p><p>Jedes Mitglied trägt seinen Geburtstag selbst unter <strong>Meins → Konto</strong> ein. Wer Mitglieder anlegen darf, kann das Datum auch für andere eintragen, ändern oder entfernen – etwa wenn jemand die App nicht nutzt oder um eine bestehende Liste zu übernehmen.</p>
+<figure class="hilfe-bild"><img src="bilder/geburtstage-pflegen.jpg" alt="Fenster Geburtstag auf der Seite eines Mitglieds" loading="lazy"><figcaption>Fenster Geburtstag auf der Seite eines Mitglieds</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Mitglieder</strong>, und tippe auf die Person. Tippe auf ihrer Seite unter den Kacheln auf <strong>Geburtstag</strong>; es öffnet sich das Fenster <strong>Geburtstag</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Das eingetragene Datum</strong> oder „Nicht eingetragen.“.</li><li><strong>Anderen Mitgliedern zeigen</strong>, <strong>Alter anzeigen</strong> und (mit der Liste <strong>Mitglieder</strong>) ob der Geburtstag auf der Seite der Person steht: nur zur Information, denn das stellt nur die Person selbst ein.</li><li><strong>Tag</strong>, <strong>Monat</strong> und <strong>Jahr</strong>: das Datum zum Ändern. Das Jahr ist freiwillig.</li><li><strong>Geburtstag speichern</strong> und <strong>Entfernen</strong>.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Einen Geburtstag eintragen oder ändern</h3>
+<ol><li>Wähle <strong>Tag</strong> und <strong>Monat</strong>.</li><li>Trage das <strong>Jahr</strong> ein, wenn du es weißt (vierstellig), sonst lass das Feld leer.</li><li>Tippe auf <strong>Geburtstag speichern</strong>.</li></ol>
+<h3>Einen Geburtstag entfernen</h3>
+<ol><li>Tippe auf <strong>Entfernen</strong>.</li><li>Bestätige die Rückfrage.</li></ol>
 <h2>Gut zu wissen</h2>
-<ul><li>Erlaubt sind nur echte Daten: der 29. Februar nur in einem Schaltjahr (oder ohne Jahr), Jahre ab 1900 und nichts in der Zukunft.</li><li>Geburtstage sehen nur Mitglied. Von Personen ohne Mitgliederbereich (z. B. Anwärtern) kannst du schon einen eintragen; er erscheint, sobald die Person als Mitglied aufgenommen ist.</li><li>Wird ein Konto gelöscht, ist auch der Geburtstag weg.</li></ul>
+<ul><li>Erlaubt sind nur echte Daten: der 29. Februar nur in einem Schaltjahr (oder ohne Jahr), Jahre ab 1900 und nichts in der Zukunft.</li><li>Ein neu eingetragener Geburtstag ist für andere Mitglied sichtbar, ohne Alter. Auf der Seite der Person unter <strong>Mitglieder</strong> sehen ihn angemeldete Mitglied, bis sie selbst etwas anderes wählt.</li><li>Geburtstage sehen nur Mitglied. Von Personen ohne Mitgliederbereich (z. B. Anwärtern) kannst du schon einen eintragen; er erscheint, sobald die Person als Mitglied aufgenommen ist.</li><li>Beim Anlegen neuer Mitglieder kannst du den Geburtstag gleich mit eintragen.</li><li>Wird ein Konto gelöscht, ist auch der Geburtstag weg.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="mitglied-uebersicht.html" data-seite="mitglied-uebersicht">Seite eines Mitglieds</a></li><li><a href="mitglieder-anlegen.html" data-seite="mitglieder-anlegen">Mitglied anlegen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Einstellungen im Überblick – Handbuch der App der Marinekompanie Lank</title>
+<title>Einstellungen – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,13 +91,17 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Einstellungen im Überblick</h1><p>Die Einstellungen erreichst du unter <strong>Verwaltung → Einstellungen</strong>: im Bereich <strong>Verwaltung</strong> (unten in der Leiste) auf den Knopf <strong>Einstellungen</strong> tippen. Die Übersicht zeigt je Thema eine Zeile; ein Tipp öffnet die Seite dazu, <strong>‹ Einstellungen</strong> führt zurück. Die Einstellungen sehen nur Admins.</p>
-<h2>Die Seiten</h2>
-<ul><li><strong>Bereiche</strong>: welche Bereiche die App für alle hat. Siehe <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Ersteinrichtung und Bereiche</a>.</li><li><strong>Rollen</strong>: wer was in der App darf. Siehe <a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen und Mitglieder</a>.</li><li><strong>Google-Zugang</strong>: die Verbindung zu Google für Galerie und Kalender. Siehe <a href="admin-google.html" data-seite="admin-google">Google einrichten</a>.</li><li><strong>Kalender</strong>: woher der Kalender kommt (Google Kalender oder geheime iCal-Adresse). Siehe <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Ersteinrichtung und Bereiche</a>.</li><li><strong>Galerie</strong>: der Google-Drive-Ordner mit den Fotoalben. Siehe <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Ersteinrichtung und Bereiche</a>.</li><li><strong>Neuigkeiten</strong>: woher die News kommen. Die Seite gibt es nur ohne WordPress; mit WordPress kommen die News immer aus den Beiträgen der Webseite.</li><li><strong>Benachrichtigungen</strong>: siehe unten.</li><li><strong>Zustand und Updates</strong>: Ampel je Bereich, installierte Version und Updates. Siehe <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Statusmeldungen</a> und <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Updates und Datensicherung</a>.</li><li><strong>Wartungsmodus</strong>: die App vorübergehend nur für Admins öffnen. Siehe <a href="admin-wartungsmodus.html" data-seite="admin-wartungsmodus">Wartungsmodus</a>.</li><li><strong>Datensicherung</strong>: Sicherung herunterladen oder einspielen. Siehe <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Updates und Datensicherung</a>.</li></ul>
-<h2>Benachrichtigungen</h2>
-<p>Hier steht, wie viele Geräte für Benachrichtigungen angemeldet sind (mit Konto und als Gast) und ob Nachrichten auf den Versand warten. Kann der Server keine Benachrichtigungen senden, nennt die Seite, was fehlt; das schaltet euer Hoster in den PHP-Einstellungen ein.</p>
-<p>Bei <strong>Erinnerung an Termine am nächsten Tag ab</strong> wählst du die Uhrzeit, ab der die Erinnerung an die Termine des Folgetags verschickt wird. Ist der Bereich Geburtstage an, schaltest du darunter mit <strong>Am Geburtstag eines Mitglieds alle anderen benachrichtigen</strong> die Benachrichtigung am Geburtstag aus oder ein und wählst bei <strong>Benachrichtigung am Geburtstag ab</strong>, ab wann sie kommt (üblich 7 Uhr). Worüber jede Person benachrichtigt wird, wählt sie selbst auf ihrem Gerät, siehe <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
-<p class="hinweis">Klappt etwas nicht, hilft oft <a href="haeufige-probleme.html" data-seite="haeufige-probleme">Häufige Probleme</a>.</p>
+<h1>Einstellungen</h1><p>Hier stellst du die App für eure Kompanie ein: welche Bereiche es gibt, wer was darf, die Verbindungen zu Google und den Zustand der App. Die Seite sehen nur Admins.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-einstellungen.jpg" alt="Die Übersicht der Einstellungen mit einer Zeile je Thema" loading="lazy"><figcaption>Die Übersicht der Einstellungen mit einer Zeile je Thema</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf <strong>Einstellungen</strong>.</p>
+<h2>Was du hier siehst</h2>
+<p>Je Thema eine Zeile mit einem kurzen Satz. Tippe auf eine Zeile, um ihre Seite zu öffnen. Mit <strong>‹ Einstellungen</strong> oben kommst du von dort zurück zur Übersicht.</p>
+<ul><li><strong>Bereiche</strong>: welche Bereiche die App für alle hat. Siehe <a href="admin-bereiche.html" data-seite="admin-bereiche">Bereiche</a>.</li><li><strong>Rollen</strong>: wer was in der App darf. Siehe <a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen</a>.</li><li><strong>Benachrichtigungen</strong>: angemeldete Geräte und Uhrzeit der Erinnerung. Siehe <a href="admin-benachrichtigungen.html" data-seite="admin-benachrichtigungen">Benachrichtigungen einstellen</a>.</li><li><strong>Google-Zugang</strong>: die Verbindung zu Google für Galerie und Kalender. Siehe <a href="admin-google.html" data-seite="admin-google">Google-Zugang</a>.</li><li><strong>Galerie</strong>: der Ordner in Google Drive mit den Fotoalben. Siehe <a href="admin-galerie.html" data-seite="admin-galerie">Galerie einrichten</a>.</li><li><strong>Kalender</strong>: woher der Kalender für Mitglieder kommt. Siehe <a href="admin-kalender.html" data-seite="admin-kalender">Kalender einrichten</a>.</li><li><strong>Neuigkeiten</strong>: woher die News kommen. Heißt der Bereich bei euch anders als „News“, steht hier sein Name. Die Seite gibt es nur in der eigenständigen App (ohne WordPress).</li><li><strong>Zustand und Updates</strong>: Ampel je Bereich, installierte Version, Updates und Fehlerprotokoll. Siehe <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>.</li><li><strong>Datensicherung</strong>: Sicherung herunterladen oder einspielen. Siehe <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Datensicherung</a>.</li><li><strong>Wartungsmodus</strong>: die App vorübergehend nur für Admins öffnen. Siehe <a href="admin-wartungsmodus.html" data-seite="admin-wartungsmodus">Wartungsmodus</a>.</li><li><strong>Was ist neu</strong>: Änderungen von Version zu Version. Siehe <a href="admin-neuerungen.html" data-seite="admin-neuerungen">Was ist neu</a>.</li></ul>
+<h2>Gut zu wissen</h2>
+<ul><li>Mit WordPress kommen die News immer aus den Beiträgen der Webseite; deshalb fehlt dort die Zeile <strong>Neuigkeiten</strong>. Einige Einstellungen findest du mit WordPress zusätzlich im WordPress-Backend auf der Seite der App.</li><li>Klappt etwas nicht, hilft oft <a href="haeufige-probleme.html" data-seite="haeufige-probleme">Häufige Probleme</a>.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistent</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

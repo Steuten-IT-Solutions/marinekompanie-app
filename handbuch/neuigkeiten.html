@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,12 +91,22 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>News</h1><p class="wenn">Nur, wenn News eingeschaltet ist.</p><p>Unter <strong>News</strong> stehen die Beiträge der Marinekompanie Lank, die neuesten oben, mit Datum und einer kurzen Vorschau. Lesen kann sie jeder, auch ohne Anmeldung.</p>
-<h2>Beitrag lesen</h2>
-<p>Ein Tipp auf einen Beitrag öffnet ihn ganz. <strong>Auf der Webseite öffnen</strong> zeigt ihn im Browser auf der Webseite, von der er stammt; <strong>‹ Alle Neuigkeiten</strong> führt zurück zur Liste. Ältere Beiträge lädst du unten mit <strong>Ältere Beiträge</strong> nach.</p>
-<h2>Bei neuen Beiträgen benachrichtigt werden</h2>
-<p>Ohne Konto tippst du unter der Liste auf <strong>Bei neuen Beiträgen benachrichtigen</strong>. Mit Konto stellst du das unter <strong>Meins → Konto → Benachrichtigungen einstellen</strong> ein. Mehr dazu: <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
-<p class="hinweis">Woher die Beiträge kommen (z. B. aus der Webseite der Kompanie), legt ein Admin fest.</p>
+<h1>News</h1><p class="wenn">Nur, wenn News eingeschaltet ist.</p><p>Unter <strong>News</strong> liest du die Beiträge der Marinekompanie Lank, die neuesten oben. Lesen kann sie jeder, auch ohne Anmeldung.</p>
+<figure class="hilfe-bild"><img src="bilder/neuigkeiten.jpg" alt="Liste der Beiträge mit Datum, Titel und kurzer Vorschau" loading="lazy"><figcaption>Liste der Beiträge mit Datum, Titel und kurzer Vorschau</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>News</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Beitrag</strong>: Bild (falls vorhanden), Datum, Titel und eine kurze Vorschau des Textes.</li><li><strong>Ältere Beiträge</strong> (unten): lädt weitere, ältere Beiträge nach. Der Knopf fehlt, wenn alle Beiträge zu sehen sind.</li><li><strong>Bei neuen Beiträgen benachrichtigen</strong> (unten, nur ohne Anmeldung): führt zu den Benachrichtigungen.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Einen Beitrag lesen</h3>
+<ol><li>Tippe auf den Beitrag. Er öffnet sich ganz, siehe <a href="neuigkeiten-beitrag.html" data-seite="neuigkeiten-beitrag">Einen Beitrag lesen</a>.</li><li>Mit <strong>‹ Alle Neuigkeiten</strong> kommst du zurück zur Liste.</li></ol>
+<h3>Über neue Beiträge benachrichtigt werden</h3>
+<ol><li>Tippe unter der Liste auf <strong>Bei neuen Beiträgen benachrichtigen</strong>.</li><li>Lass <strong>News: neue Beiträge</strong> angehakt und tippe auf <strong>Benachrichtigungen einschalten</strong>.</li></ol>
+<p>Bist du angemeldet, stellst du das unter <strong>Meins</strong> → <strong>Konto</strong> → <strong>Benachrichtigungen einstellen</strong> ein. Mehr dazu unter <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Die Beiträge kommen von einer Quelle, die ein Admin festlegt, z. B. von der Webseite der Marinekompanie Lank.</li><li>Gibt es noch keine Beiträge, steht dort „Noch keine Neuigkeiten.“</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="neuigkeiten-beitrag.html" data-seite="neuigkeiten-beitrag">Einen Beitrag lesen</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,16 +91,25 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Punkte vergeben</h1><p class="wenn">Nur, wenn Punkte eingeschaltet ist.</p><p>Wer die Rolle „Punkte verwalten“ oder eine Rolle mit diesem Recht hat, findet in der App den Bereich <strong>Verwaltung</strong> (unten in der Leiste, wenn es mehrere Bereiche gibt). Er beginnt mit einer Übersicht, in der jede Seite ein eigener Knopf mit Symbol ist; <strong>‹ Verwaltung</strong> führt von einer Seite zurück zur Übersicht.</p>
-<h2>Vorlagen im Punktekatalog</h2>
-<p>Unter <strong>Verwaltung → Punktekatalog</strong> legst du häufige Anlässe mit ihrer Punktzahl an, z. B. „Teilnahme am Sommerfest – 5“: Bezeichnung und Punkte eintragen und <strong>Hinzufügen</strong> tippen. Mit <strong>Wert ändern</strong> passt du die Punktzahl später an. Nicht mehr benötigte Vorlagen lassen sich <strong>deaktivieren</strong> (und wieder <strong>aktivieren</strong>); deaktivierte stehen beim Vergeben nicht zur Auswahl.</p>
-<h2>Punkte vergeben</h2>
-<ol><li><strong>Verwaltung → Punkte +</strong> öffnen. Für eine einzelne Person geht es auch auf ihrer Seite: Kachel <strong>Punkte</strong> antippen; das Formular gilt dann nur für sie.</li><li>Unter <strong>Vorlage aus dem Katalog</strong> eine Vorlage wählen (sie füllt Punktzahl und Grund aus, beides lässt sich noch ändern) oder Punktzahl und Grund selbst eintragen. Das Datum ist heute vorausgewählt. Die Punktzahl ist eine ganze Zahl außer 0, höchstens 10.000; Abzüge gehen mit einer negativen Zahl.</li><li>Ein oder mehrere Mitglieder ankreuzen (die Suche hilft bei vielen Namen, <strong>Alle</strong> kreuzt alle gefundenen an) und <strong>Punkte vergeben</strong> tippen.</li></ol>
-<p>Punkte gibt es nur für Mitglieder, nicht für Rollen ohne Mitgliederbereich (z. B. Anwärter) oder Gäste. Wer <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a> eingeschaltet hat, bekommt eine, wenn er Punkte erhält oder ihm welche abgezogen werden.</p>
-<h2>Punktefaktor</h2>
-<p>Manche Rollen haben einen Punktefaktor, z. B. ×0,5 für junge Mitglieder; den legt ein Admin unter <strong>Verwaltung → Einstellungen → Rollen</strong> fest. Hat eine Rolle einen anderen Faktor als 1, steht er beim Namen, z. B. „×0,5“. Er gilt beim Vergeben und wird mit dem Eintrag gespeichert. Ist so jemand angekreuzt, erscheint <strong>Punktefaktor der Rolle anwenden</strong>; ohne Häkchen zählt der Eintrag für alle voll.</p>
-<h2>Stornieren</h2>
-<p>Unter <strong>Verwaltung → Mitglieder</strong> das Mitglied öffnen, die Kachel <strong>Punkte</strong> antippen und beim Eintrag auf <strong>Stornieren</strong> tippen. Der Eintrag zählt dann nicht mehr; gespeichert bleibt, wer ihn angelegt und storniert hat.</p>
+<h1>Punkte vergeben</h1><p class="wenn">Nur, wenn Punkte eingeschaltet ist.</p><p>Hier trägst du Punkte für ein oder mehrere Mitglieder auf einmal ein, z. B. für alle, die beim Arbeitsdienst geholfen haben. Auch Abzüge gehen hier.</p>
+<figure class="hilfe-bild"><img src="bilder/punkte-vergeben.jpg" alt="Das Formular zum Vergeben von Punkte" loading="lazy"><figcaption>Das Formular zum Vergeben von Punkte</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf den Knopf <strong>Punkte +</strong>. Mit <strong>‹ Verwaltung</strong> kommst du zurück zur Startseite der Verwaltung.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Vorlage aus dem Katalog</strong>: häufige Anlässe mit fester Punktzahl. „– freie Eingabe –“ heißt: ohne Vorlage.</li><li><strong>Punkte</strong>: die Punktzahl, eine ganze Zahl. Für einen Abzug schreibst du ein Minus davor.</li><li><strong>Datum</strong>: heute ist vorausgewählt.</li><li><strong>Grund</strong>: steht später beim Mitglied im Verlauf.</li><li><strong>Mitglieder</strong>: alle Mitglieder zum Ankreuzen, mit <strong>Mitglied suchen …</strong>, <strong>Alle</strong> (bzw. <strong>Keine</strong>) und darunter, wie viele ausgewählt sind.</li><li><strong>Punktefaktor der Rolle anwenden</strong>: erscheint nur, wenn jemand Ausgewähltes eine Rolle mit einem anderen Faktor als 1 hat.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Punkte vergeben</h3>
+<ol><li>Wähle unter <strong>Vorlage aus dem Katalog</strong> eine Vorlage. Sie füllt <strong>Punkte</strong> und <strong>Grund</strong> aus; beides kannst du noch ändern. Ohne Vorlage trägst du beides selbst ein.</li><li>Ändere das <strong>Datum</strong>, wenn der Anlass nicht heute war.</li><li>Kreuze die Mitglieder an. Bei vielen Namen hilft die Suche; <strong>Alle</strong> kreuzt alle gefundenen an.</li><li>Tippe auf <strong>Punkte vergeben</strong>. Unten erscheint kurz, wie viele Mitglieder die Punkte bekommen haben.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/punkte-vergeben-ausgefuellt.jpg" alt="Formular mit Vorlage und zwei ausgewählten Mitgliedern" loading="lazy"><figcaption>Formular mit Vorlage und zwei ausgewählten Mitgliedern</figcaption></figure>
+<h3>Punkte abziehen</h3>
+<ol><li>Wähle „– freie Eingabe –“ und trage die Punktzahl mit Minus ein, z. B. -2.</li><li>Trage den <strong>Grund</strong> ein, kreuze die Mitglieder an und tippe auf <strong>Punkte vergeben</strong>.</li></ol>
+<h3>Vorschlag aus einer Anwesenheitsliste übernehmen</h3>
+<p>Wer zusätzlich die Anwesenheit erfasst, kann aus einer Anwesenheitsliste heraus Punkte vergeben. Dann öffnet sich dieses Formular mit einem Vorschlag:</p>
+<ol><li>Oben steht der Rückweg „‹ …“ mit dem Namen der Liste, darunter „Vorschlag: alle Anwesenden, die für … noch keine Punkte haben.“ Diese Mitglieder sind schon angekreuzt.</li><li><strong>Grund</strong> und <strong>Datum</strong> kommen aus der Liste. Wählst du eine Vorlage, heißt der Grund „Vorlage: Name der Liste“.</li><li>Prüfe die Auswahl und tippe auf <strong>Punkte vergeben</strong>. Danach bist du wieder bei der Liste.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Die Punktzahl darf nicht 0 sein und höchstens 10.000 (bzw. -10.000) betragen. Der Grund ist Pflicht.</li><li>Punkte bekommen nur Mitglieder, keine Gäste.</li><li>Aus einer Anwesenheitsliste bekommt niemand zweimal Punkte: Wer für diese Liste schon welche hat, wird übersprungen.</li><li><strong>Punktefaktor</strong>: Manche Rollen haben einen Faktor, z. B. ×0,5 für junge Mitglieder. Er steht in der Auswahl hinter dem Namen, z. B. „×0,5“. Mit Häkchen bei <strong>Punktefaktor der Rolle anwenden</strong> zählt der Eintrag entsprechend weniger (oder mehr); ohne Häkchen zählt er für alle voll. Hat jemand mehrere Rollen, gilt der kleinste Faktor. Den Faktor legt ein Admin bei den Rollen in den Einstellungen fest.</li><li>Wer Benachrichtigungen eingeschaltet hat, bekommt eine Nachricht mit Wert und Grund.</li><li>Einen falschen Eintrag stornierst du auf der Seite des Mitglieds.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="punktekatalog.html" data-seite="punktekatalog">Punktekatalog</a></li><li><a href="mitglied-punkte.html" data-seite="mitglied-punkte">Punkte eines Mitglieds</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

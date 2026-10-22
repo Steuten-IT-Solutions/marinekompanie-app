@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,18 +91,27 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Schwarzes Brett</h1><p class="wenn">Nur, wenn Schwarzes Brett eingeschaltet ist.</p><p>Am <strong>Schwarzes Brett</strong> stehen dringende Nachrichten, z. B. „Training fällt heute aus“ oder „Treffpunkt geändert“. Es ist für Mitglied und Personen mit dem internen Kalender (z. B. Anwärter) da.</p>
-<h2>Das Banner</h2>
-<p>Eine neue Nachricht erscheint als farbiges Banner oben auf jeder Seite der App, mit Text, Namen und Uhrzeit (bei einer geänderten Nachricht mit „(geändert)“). Gibt es mehrere, siehst du die neueste; ein Tipp auf <strong>+1 weitere</strong> (bzw. <strong>+2 weitere</strong> …) klappt die übrigen auf, <strong>Weniger anzeigen</strong> wieder zu. <strong>Brett öffnen</strong> zeigt alle aktuellen Nachrichten auf einer eigenen Seite, jeweils mit dem Hinweis, bis wann sie sichtbar sind.</p>
-<p>Jede Nachricht steht genau <strong>24 Stunden</strong> und verschwindet dann von selbst – auch ohne Netz, wenn die App die Nachricht schon geladen hatte. Ältere Nachrichten gibt es nicht; das Brett ist kein Archiv.</p>
-<h2>Ausblenden</h2>
-<p>Mit <strong>×</strong> blendest du eine Nachricht auf diesem Gerät aus; sie bleibt auf der Seite <strong>Brett öffnen</strong> sichtbar. Wird sie danach noch geändert, erscheint sie wieder im Banner, damit du die Änderung mitbekommst. Auf anderen Geräten blendest du sie dort aus.</p>
-<p>Hast du alle aktuellen Einträge ausgeblendet, bleibt oben eine schmale Zeile, z. B. <strong>Schwarzes Brett · 2 ausgeblendet</strong>. Über <strong>Brett öffnen</strong> liest du sie dort jederzeit nach. Die Zeile verschwindet, sobald die Einträge abgelaufen sind.</p>
-<h2>Benachrichtigung</h2>
-<p>Bei einer neuen Nachricht kommt eine Benachrichtigung, wenn du sie für das Gerät eingeschaltet hast (Art <strong>Schwarzes Brett: dringende Nachrichten</strong>, siehe <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>). Wer schreibt, kann die Benachrichtigung auch weglassen; dann steht die Nachricht nur in der App. Ein Tipp auf die Benachrichtigung öffnet das Brett. Wird eine Nachricht nur geändert, kommt keine neue Benachrichtigung.</p>
-<p>Die Nachrichten sind reiner Text; Links darin lassen sich nicht antippen. Kopiere sie bei Bedarf.</p>
-<h2>Umfragen</h2>
-<p>Nutzt die Kompanie auch <strong>Umfragen</strong>, stehen für Mitglied die laufenden Umfragen am Brett, jeweils mit <strong>offen</strong> oder <strong>beantwortet</strong>. Im Banner erscheinen nur die, auf die du noch nicht geantwortet hast; <strong>Teilnehmen</strong> öffnet sie. Mehr dazu auf der Hilfeseite <strong>Umfragen</strong>.</p>
+<h1>Schwarzes Brett</h1><p class="wenn">Nur, wenn Schwarzes Brett eingeschaltet ist.</p><p>Am <strong>Schwarzes Brett</strong> stehen dringende Nachrichten, z. B. „Training fällt heute aus“ oder „Treffpunkt geändert“, und für Mitglied die laufenden Umfragen. Neue Einträge erscheinen als farbiges Banner oben auf jeder Seite der App; auf dieser Seite liest du alle auf einmal nach.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett.jpg" alt="Die Seite des Schwarzes Bretts mit aktuellen Nachrichten und laufenden Umfragen" loading="lazy"><figcaption>Die Seite des Schwarzes Bretts mit aktuellen Nachrichten und laufenden Umfragen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe im Banner oben auf <strong>Brett öffnen</strong>. Hast du eine Benachrichtigung zu einer neuen Nachricht bekommen, öffnet ein Tipp darauf ebenfalls diese Seite.</p>
+<p>Das Banner erscheint nur, solange es eine Nachricht gibt oder eine laufende Umfrage, auf die du noch nicht geantwortet hast.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Aktuelle Nachrichten</strong>: jede Nachricht mit dem Namen der Person, die sie geschrieben hat, der Uhrzeit (bei einer geänderten Nachricht mit „(geändert)“), dem Text und <strong>Sichtbar bis</strong> mit Tag und Uhrzeit. Gibt es keine, steht dort <strong>Zurzeit gibt es keine Nachrichten.</strong></li><li><strong>Laufende Umfragen</strong>: nur für Mitglied, wenn die Marinekompanie Lank Umfragen nutzt. Jede Umfrage mit ihrem Ende, der Frage und dem Hinweis <strong>offen</strong> (noch nicht geantwortet) oder <strong>beantwortet</strong>.</li><li><strong>Teilnehmen</strong> bzw. <strong>Antwort ansehen</strong>: öffnet die Umfrage. Dort antwortest du oder siehst deine Antwort und die Ergebnisse.</li><li><strong>Beendete Umfragen</strong>: öffnet die Liste aller Umfragen, auch der beendeten.</li></ul>
+<h2>Das Banner oben auf jeder Seite</h2>
+<p>Solange es gültige Einträge gibt, steht oben auf jeder Seite der App (außer auf dieser) ein farbiges Banner. Es zeigt die neueste Nachricht mit Namen, Uhrzeit und Text. Laufende Umfragen, auf die du noch nicht geantwortet hast, stehen ebenfalls darin, jeweils mit dem Knopf <strong>Teilnehmen</strong>.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-banner.jpg" alt="Das Banner mit einer Nachricht und dem Knopf +1 weitere" loading="lazy"><figcaption>Das Banner mit einer Nachricht und dem Knopf +1 weitere</figcaption></figure>
+<ul><li><strong>+1 weitere</strong> (bzw. <strong>+2 weitere</strong> …): klappt die übrigen Einträge auf. <strong>Weniger anzeigen</strong> klappt sie wieder zu.</li><li><strong>Brett öffnen</strong>: öffnet diese Seite.</li><li><strong>×</strong>: blendet den Eintrag auf diesem Gerät aus.</li></ul>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-banner-mehr.jpg" alt="Das aufgeklappte Banner mit einer Nachricht und einer Umfrage" loading="lazy"><figcaption>Das aufgeklappte Banner mit einer Nachricht und einer Umfrage</figcaption></figure>
+<h2>So gehst du vor</h2>
+<h3>Eine Nachricht ausblenden</h3>
+<ol><li>Tippe im Banner rechts neben der Nachricht auf <strong>×</strong>.</li><li>Die Nachricht verschwindet aus dem Banner. Auf dieser Seite bleibt sie sichtbar.</li></ol>
+<p>Hast du alle Einträge ausgeblendet, bleibt oben eine schmale Zeile, z. B. <strong>Schwarzes Brett · 2 ausgeblendet</strong>, mit <strong>Brett öffnen</strong>. Sie verschwindet, sobald die Einträge abgelaufen sind.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-ausgeblendet.jpg" alt="Die schmale Zeile, wenn alle Einträge ausgeblendet sind" loading="lazy"><figcaption>Die schmale Zeile, wenn alle Einträge ausgeblendet sind</figcaption></figure>
+<h2>Gut zu wissen</h2>
+<ul><li>Jede Nachricht steht genau <strong>24 Stunden</strong> und verschwindet dann von selbst, auch ohne Netz, wenn die App sie schon geladen hatte. Ältere Nachrichten gibt es nicht; das Brett ist kein Archiv.</li><li>Ausblenden gilt nur für das Gerät, auf dem du es tust. Wird eine ausgeblendete Nachricht oder Umfrage danach geändert, erscheint sie wieder im Banner, damit du die Änderung mitbekommst.</li><li>Hast du auf eine Umfrage geantwortet, steht sie nicht mehr im Banner, aber weiter auf dieser Seite.</li><li>Die Nachrichten sind reiner Text. Links darin lassen sich nicht antippen; kopiere sie bei Bedarf.</li><li>Bei einer neuen Nachricht bekommst du eine Benachrichtigung, wenn du die Art <strong>Schwarzes Brett: dringende Nachrichten</strong> für dein Gerät eingeschaltet hast (siehe <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>). Wer schreibt, kann die Benachrichtigung auch weglassen. Wird eine Nachricht nur geändert, kommt keine neue Benachrichtigung.</li><li>Das Schwarzes Brett sehen Mitglied und Personen mit dem internen Kalender (z. B. Anwärter). Umfragen gibt es nur für Mitglied.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

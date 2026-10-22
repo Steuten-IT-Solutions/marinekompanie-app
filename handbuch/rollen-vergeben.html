@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rollen vergeben – Handbuch der App der Marinekompanie Lank</title>
+<title>Konto und Rolle – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,21 +91,31 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Rollen vergeben</h1><p>Wer Rollen vergeben darf (Admin oder eine Rolle mit diesem Recht), findet in der App den Bereich <strong>Verwaltung</strong> (unten in der Leiste, wenn es mehrere Bereiche gibt). Dort öffnet sich zuerst die <strong>Mitgliederliste</strong>.</p>
-<h2>Die Mitgliederliste</h2>
-<p>Das Suchfeld <strong>Mitglied suchen …</strong> filtert die Liste nach dem Namen. Ein Tipp auf eine Person öffnet ihre Seite; ganz unten klappt <strong>Konto und Rolle</strong> auf. <strong>‹ Alle Mitglieder</strong> führt zurück.</p>
-<h2>Rolle ändern</h2>
-<p>Unter <strong>Verwaltung → Mitglieder</strong> die Person öffnen, ganz unten <strong>Konto und Rolle</strong> aufklappen und unter <strong>Grundrolle</strong> die Rolle auswählen. Die Änderung gilt sofort. Welche Rollen es gibt und was sie dürfen, legen die Admins unter <strong>Verwaltung → Einstellungen → Rollen</strong> fest.</p>
-<h2>Zusatzrollen</h2>
-<p>Darunter kreuzt du unter <strong>Zusatzrollen</strong> weitere Rollen an, z. B. „Punkte verwalten“ für ein Mitglied. Die Person hat dann die Rechte aller ihrer Rollen zusammen; bei Punkte zählt der kleinste Punktefaktor ihrer Rollen. Zusatzrollen gibt es nur zu einer Grundrolle mit Mitgliederbereich, und die festen Rollen (Gast, Mitglied, Admin) sind nur Grundrolle.</p>
-<p>Die Mitgliederliste zeigt die Rollen nicht an; unter <strong>Filter und Sortierung</strong> filterst du über <strong>Alle Rollen</strong> die Liste nach einer Rolle, egal ob Grund- oder Zusatzrolle. Gast kannst du dort auch wählen, ohne vorher das Häkchen darunter zu setzen.</p>
-<ul><li>Die eigene Rolle ändert niemand selbst.</li><li>Der letzte Admin kann nicht herabgestuft werden.</li><li>Wer jemanden zum Admin macht, muss das bestätigen: Admins dürfen alles, auch Einstellungen ändern.</li><li>Mit WordPress wird Admin nicht in der App vergeben oder entzogen, sondern im WordPress-Backend.</li><li>Wer kein Admin ist, vergibt und entfernt (auch als Zusatzrolle) nur Rollen, deren Rechte er selbst hat – nie Admin und nie Rollen mit „Mitglieder anlegen“ oder „Rollen vergeben“ – und ändert nur Personen, die keines dieser beiden Rechte und keine weiteren Rechte als er selbst haben.</li></ul>
-<h2>Einzelne Rechte geben oder entziehen</h2>
-<p>Soll eine Person ein Recht bekommen, das keine ihrer Rollen hat, oder ein Recht ihrer Rollen nicht haben, brauchst du dafür keine eigene Rolle. Unter <strong>Konto und Rolle</strong> (ganz unten aufklappen) stehen unter <strong>Rechte</strong> alle Rechte der Person. Setze oder entferne die Haken und tippe auf <strong>Rechte speichern</strong>. Was von ihren Rollen (Grundrolle und Zusatzrollen) abweicht, ist mit „zusätzlich“ oder „entzogen“ markiert; auf der Seite der Person steht unter dem Namen dann „mit Ausnahmen bei den Rechten“. <strong>Wie die Rolle</strong> entfernt alle Ausnahmen.</p>
-<ul><li>Die Ausnahmen bleiben bestehen, wenn sich die Grundrolle oder die Zusatzrollen ändern. Was die Rollen dann ohnehin regeln, fällt weg: ein zusätzlich gegebenes Recht, das die Rollen jetzt schon haben, und ein entzogenes Recht, das sie nicht mehr haben.</li><li>Rechte zum Verwalten brauchen den Mitgliederbereich. Der interne Kalender gehört zum Mitgliederbereich und lässt sich nur mit ihm entziehen.</li><li>Die Rolle Admin hat immer alle Rechte, die Rolle Gast keine: Für sie gibt es keine Ausnahmen. Bekommt jemand eine dieser beiden Rollen als Grundrolle, verfallen seine Ausnahmen.</li><li>Einstellungen, Updates und Datensicherung bleiben der Rolle Admin vorbehalten.</li><li>Wer kein Admin ist, ändert nur Rechte, die er selbst hat, nie „Mitglieder anlegen“ oder „Rollen vergeben“, und nur bei Personen, die er auch sonst verwalten darf. Die eigenen Rechte ändert niemand selbst.</li></ul>
-<h2>Gäste und Anwärter</h2>
-<p>Konten ohne Rolle in der App (Gast) stehen nicht in der Liste. Mit dem Häkchen <strong>Auch Gast-Konten anzeigen (um ihnen eine Rolle zu geben)</strong> erscheinen sie, und du kannst ihnen eine Rolle geben. Personen mit Rollen nur für den internen Kalender (z. B. Anwärter) stehen immer in der Liste.</p>
-<p>Neue Konten anlegen, Passwörter zurücksetzen und Personen mit <strong>Als Mitglied aufnehmen</strong> aufnehmen (nur bei Rollen, die ein Admin dafür freigegeben hat, z. B. Anwärter) darf nur, wer Mitglieder anlegen darf.</p>
+<h1>Konto und Rolle</h1><p>Unter <strong>Konto und Rolle</strong> auf der Seite eines Mitglieds legst du fest, welche Rolle und welche Rechte die Person hat, erzeugst ein neues Startpasswort, trägst sie als ehemalig ein oder änderst und löschst ihr Konto. Wer nur Punkte, Strafen oder Ähnliches pflegt, sieht hier nur die Rolle.</p>
+<figure class="hilfe-bild"><img src="bilder/rollen-vergeben.jpg" alt="Konto und Rolle, aufgeklappt" loading="lazy"><figcaption>Konto und Rolle, aufgeklappt</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Mitglieder</strong>, und tippe auf die Person. Tippe ganz unten auf ihrer Seite auf <strong>Konto und Rolle</strong>; der Bereich klappt auf.</p>
+<h2>Was du hier siehst</h2>
+<p>Du siehst nur die Teile, für die du das Recht hast:</p>
+<ul><li><strong>Grundrolle</strong> und <strong>Zusatzrollen</strong>: für alle, die Rollen vergeben dürfen. Sonst steht hier nur die Rolle zum Lesen.</li><li><strong>Rechte</strong>: alle Rechte der Person, mit <strong>Rechte speichern</strong> (wer Rollen vergeben darf).</li><li><strong>Als Mitglied aufnehmen</strong>: nur bei Rollen, die ein Admin dafür freigegeben hat, z. B. Anwärter (wer Mitglieder anlegen darf).</li><li><strong>Passwort vergessen? Neues Startpasswort erzeugen</strong> (wer Mitglieder anlegen darf).</li><li><strong>Ehemalig</strong> mit <strong>Als ehemalig eintragen …</strong> (wer Mitglieder anlegen darf).</li><li><strong>Konto</strong> mit Benutzername und E-Mail, <strong>Angaben ändern</strong> und <strong>Konto löschen</strong> (wer Mitglieder anlegen darf).</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Die Rolle ändern</h3>
+<ol><li>Wähle unter <strong>Grundrolle</strong> die neue Rolle. Die Änderung gilt sofort.</li><li>Machst du jemanden zum Admin, fragt die App vorher nach: Admins dürfen alles, auch Einstellungen ändern.</li></ol>
+<h3>Eine Zusatzrolle vergeben</h3>
+<ol><li>Setze unter <strong>Zusatzrollen</strong> einen Haken bei der Rolle, z. B. „Punkte verwalten“. Die Änderung gilt sofort.</li><li>Entferne den Haken, um die Zusatzrolle wieder wegzunehmen.</li></ol>
+<h3>Ein einzelnes Recht geben oder entziehen</h3>
+<ol><li>Setze oder entferne unter <strong>Rechte</strong> den Haken beim Recht.</li><li>Tippe auf <strong>Rechte speichern</strong>. Was von den Rollen abweicht, ist mit „zusätzlich“ oder „entzogen“ markiert.</li><li><strong>Wie die Rolle</strong> entfernt alle Ausnahmen wieder.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/rollen-vergeben-rechte.jpg" alt="Rechte einer Person" loading="lazy"><figcaption>Rechte einer Person</figcaption></figure>
+<h3>Ein neues Startpasswort erzeugen</h3>
+<ol><li>Tippe auf <strong>Passwort vergessen? Neues Startpasswort erzeugen</strong> und bestätige die Rückfrage.</li><li>Gib das neue Startpasswort persönlich weiter. Es steht nur jetzt da; darunter steht der Link zur Installationsanleitung.</li></ol>
+<h3>Angaben ändern oder das Konto löschen</h3>
+<ol><li>Tippe unter <strong>Konto</strong> auf <strong>Angaben ändern</strong>, ändere Vorname, Nachname, Benutzername oder E-Mail und tippe auf <strong>Speichern</strong>.</li><li>Zum Löschen tippe auf <strong>Konto löschen</strong>, tippe zur Bestätigung den Namen ein und dann <strong>Endgültig löschen</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/rollen-vergeben-konto.jpg" alt="Passwort, Ehemalig und Konto" loading="lazy"><figcaption>Passwort, Ehemalig und Konto</figcaption></figure>
+<h2>Gut zu wissen</h2>
+<ul><li>Die Person hat die Rechte aller ihrer Rollen zusammen; bei Punkte zählt der kleinste Punktefaktor ihrer Rollen. Zusatzrollen gibt es nur zu einer Grundrolle mit Mitgliederbereich; Gast, Mitglied und Admin sind nur Grundrolle.</li><li>Die eigene Rolle und die eigenen Rechte ändert niemand selbst. Der letzte Admin kann nicht herabgestuft werden.</li><li>Wer kein Admin ist, vergibt und entfernt nur Rollen und Rechte, die er selbst hat – nie Admin und nie „Mitglieder anlegen“ oder „Rollen vergeben“ – und ändert nur Personen, die keines dieser beiden Rechte und keine weiteren Rechte als er selbst haben.</li><li>Ausnahmen bei den Rechten bleiben, wenn sich die Rollen ändern; was die Rollen dann ohnehin regeln, fällt weg. Admins haben immer alle Rechte, Gasts keine: Für sie gibt es keine Ausnahmen. Einstellungen, Updates und Datensicherung bleiben Admins vorbehalten.</li><li>Nach einem neuen Startpasswort gilt das alte nicht mehr, und die Person ist auf allen Geräten abgemeldet. Ein neuer Benutzername meldet sie ebenfalls überall ab.</li><li><strong>Konto löschen</strong> entfernt alle eigenen Daten der Person: Punkte, Strafen, Anwesenheit, Dienstgrad, Titel, Geburtstag, Eintritt, Foto, Antworten bei Umfragen und Benachrichtigungen. Was sie für andere eingetragen hat, bleibt; dort steht dann „gelöschtes Konto“. Das eigene Konto und Konten von Admins lassen sich hier nicht löschen. Wer nur ausgetreten oder verstorben ist, trägst du besser als ehemalig ein: Dann bleiben alle Daten erhalten.</li><li>Wer kein Admin ist, setzt Passwörter nur bei Personen zurück (und ändert bzw. löscht nur deren Konten und Fotos), die keine weiteren Rechte als er selbst haben und weder Mitglieder anlegen noch Rollen vergeben dürfen.</li><li>Bei einer ehemaligen Person lassen sich Rolle, Rechte und Passwort erst nach <strong>Wieder aufnehmen</strong> ändern.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> In der WordPress-Version wird die Rolle Admin im WordPress-Backend vergeben und entzogen, nicht in der App. Der Knopf zum Löschen heißt dort <strong>Aus der App entfernen</strong>: Der Benutzer der Webseite bleibt bestehen, hat aber keine Rolle in der App mehr. Den Benutzernamen von Benutzern der Webseite (z. B. Redakteure) ändert nur, wer sie in WordPress bearbeiten darf.</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="mitglied-uebersicht.html" data-seite="mitglied-uebersicht">Seite eines Mitglieds</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

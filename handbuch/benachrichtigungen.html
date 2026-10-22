@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,29 +91,40 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Benachrichtigungen</h1><p>Die App kann dich auf dem Handy oder am Computer benachrichtigen, wenn es etwas Neues gibt – auch wenn sie gerade geschlossen ist. Du wählst selbst, worüber.</p>
-<h2>Einschalten</h2>
-<ol><li>Mit Konto: auf <strong>Meins</strong>, im Menü auf <strong>Konto</strong> und dann auf <strong>Benachrichtigungen einstellen</strong> tippen. Ohne Konto: unter <strong>Termine</strong> auf <strong>Bei neuen Terminen benachrichtigen</strong> oder unter <strong>News</strong> auf <strong>Bei neuen Beiträgen benachrichtigen</strong> tippen.</li><li>Es sind alle Arten angekreuzt, die es für dich gibt. Nimm die Haken weg, die du nicht möchtest.</li><li><strong>Benachrichtigungen einschalten</strong> tippen und die Nachfrage des Browsers mit <strong>Erlauben</strong> bestätigen.</li></ol>
-<p>Mit <strong>Testnachricht senden</strong> prüfst du, ob alles klappt. Die Arten kannst du später jederzeit an- und abhaken; das gilt sofort. Mindestens eine Art bleibt an – ganz aus geht mit <strong>Benachrichtigungen ausschalten</strong>.</p>
-<p>Die Einstellung gilt nur für das Gerät, auf dem du sie vornimmst; auf weiteren Geräten schaltest du sie dort ein. Mit einem Konto bekommen höchstens 10 Geräte Benachrichtigungen; meldest du ein weiteres an, fällt das am längsten angemeldete weg.</p>
-<h2>Was es gibt</h2>
-<p>Welche Arten du siehst, hängt davon ab, welche Bereiche die Kompanie nutzt und ob du angemeldet bist.</p>
+<h1>Benachrichtigungen</h1><p>Die App kann dich auf dem Handy oder am Computer benachrichtigen, wenn es etwas Neues gibt – auch wenn sie gerade geschlossen ist. Auf dieser Seite schaltest du das ein und wählst, worüber du benachrichtigt wirst.</p>
+<figure class="hilfe-bild"><img src="bilder/benachrichtigungen.jpg" alt="Benachrichtigungen mit der Liste der Arten, alle angehakt" loading="lazy"><figcaption>Benachrichtigungen mit der Liste der Arten, alle angehakt</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<ul><li>Mit Konto: Tippe unten auf <strong>Meins</strong>, wähle oben im Menü <strong>Konto</strong> und tippe auf <strong>Benachrichtigungen einstellen</strong>.</li><li>Ohne Konto: Tippe unter <strong>Termine</strong> auf <strong>Bei neuen Terminen benachrichtigen</strong> oder unter <strong>News</strong> auf <strong>Bei neuen Beiträgen benachrichtigen</strong>.</li></ul>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Arten</strong>: eine Zeile mit Haken je Art von Nachricht, z. B. <strong>Termine: neue und geänderte</strong>. Du siehst nur die Arten, die es für dich gibt (siehe unten).</li><li><strong>Strafen: Betrag und Grund in der Nachricht zeigen</strong> (nur mit Konto, wenn es Strafen gibt): Ist der Haken weg, steht in der Nachricht nur ein Hinweis – gut, wenn andere deinen Sperrbildschirm sehen.</li><li><strong>Benachrichtigungen einschalten</strong>: schaltet die Benachrichtigungen auf diesem Gerät ein.</li><li><strong>Testnachricht senden</strong> und <strong>Benachrichtigungen ausschalten</strong>: erscheinen, sobald die Benachrichtigungen an sind.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Benachrichtigungen einschalten</h3>
+<ol><li>Öffne die Seite wie oben beschrieben.</li><li>Alle Arten sind angehakt. Nimm die Haken weg, die du nicht möchtest.</li><li>Tippe auf <strong>Benachrichtigungen einschalten</strong>.</li><li>Dein Browser fragt, ob die Seite Benachrichtigungen senden darf. Tippe auf <strong>Erlauben</strong>.</li><li>Es erscheint „Benachrichtigungen sind an“. Mit <strong>Testnachricht senden</strong> prüfst du, ob alles ankommt.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/benachrichtigungen-gast.jpg" alt="Benachrichtigungen ohne Konto: Termine, Erinnerung und News" loading="lazy"><figcaption>Benachrichtigungen ohne Konto: Termine, Erinnerung und News</figcaption></figure>
+<h3>Arten ändern</h3>
+<ol><li>Öffne die Seite.</li><li>Setze oder entferne die Haken. Die Änderung gilt sofort, ohne weiteren Knopf.</li></ol>
+<p>Mindestens eine Art bleibt angehakt. Ganz aus geht es mit <strong>Benachrichtigungen ausschalten</strong>.</p>
+<h3>Benachrichtigungen ausschalten</h3>
+<ol><li>Öffne die Seite.</li><li>Tippe auf <strong>Benachrichtigungen ausschalten</strong>. Es erscheint „Benachrichtigungen sind aus“.</li></ol>
+<h2>Welche Arten es gibt</h2>
+<p>Welche Arten du siehst, hängt davon ab, welche Bereiche die Marinekompanie Lank nutzt und ob du angemeldet bist.</p>
 <p>Für alle, auch ohne Konto:</p>
 <ul><li><strong>Termine: neue und geänderte</strong>: wenn ein Termin dazukommt oder sich Beginn, Ende oder Ort ändern. Kommen viele neue Termine auf einmal, gibt es eine Sammelnachricht.</li><li><strong>Erinnerung am Vortag</strong>: eine Nachricht mit allen Terminen von morgen, ab der Uhrzeit, die ein Admin festlegt (üblich 18 Uhr).</li><li><strong>News: neue Beiträge</strong>: wenn ein neuer Beitrag erscheint.</li></ul>
-<p>Du bekommst diese Nachrichten zu den Terminen, die du unter <strong>Termine</strong> siehst: ohne Konto zu den öffentlichen Terminen, als Mitglied oder mit dem internen Kalender (z. B. Anwärter) zum Kalender der Kompanie, wenn sie den Bereich Kalender nutzt.</p>
+<p>Diese Nachrichten bekommst du zu den Terminen, die du unter <strong>Termine</strong> siehst: ohne Konto zu den öffentlichen Terminen, als Mitglied oder mit dem internen Kalender (z. B. Anwärter) zum Kalender der Marinekompanie Lank, wenn sie ihn nutzt.</p>
 <p>Für Mitglied und Personen mit dem internen Kalender (z. B. Anwärter):</p>
-<ul><li><strong>Schwarzes Brett: dringende Nachrichten</strong>: sobald jemand eine Nachricht ans Schwarzes Brett schreibt (außer wenn er die Benachrichtigung dabei abschaltet).</li></ul>
+<ul><li><strong>Schwarzes Brett: dringende Nachrichten</strong>: sobald jemand eine Nachricht ans Schwarzes Brett schreibt (außer er schaltet die Benachrichtigung dabei ab).</li></ul>
 <p>Nur für Mitglied:</p>
-<ul><li><strong>Umfragen: neue Umfrage und Erinnerung</strong>: bei jeder neuen Umfrage und 24 Stunden vor ihrem Ende, wenn du noch nicht geantwortet hast.</li><li><strong>Geburtstage: am Tag selbst</strong>: am Geburtstag eines anderen Mitglieds, das seinen Geburtstag anderen zeigt, ab der Uhrzeit, die ein Admin festlegt (üblich 7 Uhr; ein Admin kann sie auch ganz ausschalten). Das Alter steht nur darin, wenn es freigegeben ist.</li><li><strong>Punkte: neue Einträge</strong>: wenn du Punkte bekommst oder sie dir abgezogen werden, mit Wert und Grund.</li><li><strong>Strafen: neue Einträge</strong>: bei einem neuen Eintrag für dich. Betrag und Grund stehen nur mit dem Schalter <strong>Strafen: Betrag und Grund in der Nachricht zeigen</strong> in der Nachricht, sonst nur ein Hinweis – gut, wenn andere deinen Sperrbildschirm sehen.</li><li><strong>Dienstgrad: Beförderung oder Änderung</strong>: wenn sich dein Dienstgrad ändert.</li><li><strong>Titel: neu verliehen</strong>: wenn dir ein Titel verliehen wird.</li></ul>
+<ul><li><strong>Umfragen: neue Umfrage und Erinnerung</strong>: bei jeder neuen Umfrage und 24 Stunden vor ihrem Ende, wenn du noch nicht geantwortet hast.</li><li><strong>Geburtstage: am Tag selbst</strong>: am Geburtstag eines anderen Mitglieds, das seinen Geburtstag anderen zeigt, ab der Uhrzeit, die ein Admin festlegt (üblich 7 Uhr).</li><li><strong>Strafen: neue Einträge</strong>: bei einem neuen Eintrag für dich.</li><li><strong>Punkte: neue Einträge</strong>: wenn du Punkte bekommst oder sie dir abgezogen werden, mit Wert und Grund.</li><li><strong>Dienstgrad: Beförderung oder Änderung</strong>: wenn sich dein Dienstgrad ändert.</li><li><strong>Titel: neu verliehen</strong>: wenn dir ein Titel verliehen wird.</li></ul>
 <p>Bei Punkte, Strafen, Dienstgrad und Titel geht es immer nur um deine eigenen Einträge.</p>
-<p>Schaltet die Kompanie Schwarzes Brett, Umfragen oder Geburtstage zum ersten Mal ein, wird die neue Art auf Geräten, die schon Benachrichtigungen bekommen, einmalig dazugeschaltet.</p>
-<p>Ohne Konto eingeschaltete Benachrichtigungen enden von selbst, wenn die App auf dem Gerät ein halbes Jahr lang nicht geöffnet wurde und keine Nachricht kam.</p>
-<h2>iPhone und iPad</h2>
-<p>Benachrichtigungen gibt es dort nur in der installierten App (ab iOS 16.4), nicht in Safari. Hol dir die App zuerst auf den Home-Bildschirm, siehe <a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a>, und öffne sie von dort.</p>
-<h2>Ausschalten</h2>
-<p>Unter <strong>Benachrichtigungen</strong> auf <strong>Benachrichtigungen ausschalten</strong> tippen. Meldest du dich in der App ab, schaltet sie die Benachrichtigungen deines Kontos auf diesem Gerät aus. Endet die Anmeldung anders (z. B. abgelaufen oder auf der Webseite abgemeldet), passiert das, sobald die App auf dem Gerät das nächste Mal geöffnet wird.</p>
-<h2>Es kommt nichts an?</h2>
-<ul><li>Hast du die Nachfrage abgelehnt, sind Benachrichtigungen für die Seite blockiert. Erlaube sie in den Einstellungen des Browsers (bzw. des Handys unter Mitteilungen) und lade die App neu.</li><li>Stromsparmodus und „Nicht stören“ halten Nachrichten manchmal zurück.</li><li>Steht dort „Der Server dieser App kann noch keine Benachrichtigungen senden“, sag bitte einem Admin Bescheid.</li><li>Steht dort „Dieser Browser unterstützt keine Benachrichtigungen“, probier es mit einem aktuellen Chrome, Firefox, Edge oder Safari.</li></ul>
+<h2>Auf dem iPhone und iPad</h2>
+<p>Dort gibt es Benachrichtigungen nur in der installierten App (ab iOS 16.4), nicht in Safari. Öffnest du die Seite im Browser, siehst du nur einen Hinweis und den Knopf <strong>App installieren</strong>. Hol dir die App zuerst auf den Home-Bildschirm, siehe <a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a>, öffne sie von dort und schalte die Benachrichtigungen dann ein.</p>
+<figure class="hilfe-bild"><img src="bilder/benachrichtigungen-iphone.jpg" alt="Hinweis auf dem iPhone: Benachrichtigungen nur in der installierten App" loading="lazy"><figcaption>Hinweis auf dem iPhone: Benachrichtigungen nur in der installierten App</figcaption></figure>
+<h2>Gut zu wissen</h2>
+<ul><li>Die Einstellung gilt nur für das Gerät, auf dem du sie vornimmst. Auf weiteren Geräten schaltest du sie dort ein.</li><li>Mit einem Konto bekommen höchstens 10 Geräte Benachrichtigungen. Schaltest du sie auf einem weiteren ein, fällt das am längsten eingerichtete weg.</li><li>Meldest du dich in der App ab, schaltet sie die Benachrichtigungen deines Kontos auf diesem Gerät aus. Endet die Anmeldung anders (z. B. abgelaufen), passiert das, sobald die App auf dem Gerät wieder geöffnet wird.</li><li>Schaltet die Marinekompanie Lank Schwarzes Brett, Umfragen oder Geburtstage zum ersten Mal ein, kommt die neue Art auf Geräten, die schon Benachrichtigungen bekommen, einmalig von selbst dazu.</li><li>Ohne Konto eingeschaltete Benachrichtigungen enden von selbst, wenn die App auf dem Gerät ein halbes Jahr lang nicht geöffnet wurde und keine Nachricht kam.</li></ul>
+<h2>Wenn nichts ankommt</h2>
+<ul><li>Steht dort „Benachrichtigungen sind für diese Seite blockiert“, hast du die Nachfrage des Browsers abgelehnt. Erlaube Benachrichtigungen in den Einstellungen des Browsers (bzw. des Handys unter Mitteilungen) und lade die App neu.</li><li>Stromsparmodus und „Nicht stören“ halten Nachrichten manchmal zurück.</li><li>Steht dort „Der Server dieser App kann noch keine Benachrichtigungen senden“, sag bitte einem Admin Bescheid.</li><li>Steht dort „Dieser Browser unterstützt keine Benachrichtigungen“, probier es mit einem aktuellen Chrome, Firefox, Edge oder Safari.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a></li><li><a href="anmelden-und-konto.html" data-seite="anmelden-und-konto">Mein Konto</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

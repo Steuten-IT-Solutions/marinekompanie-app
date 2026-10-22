@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inventar pflegen – Handbuch der App der Marinekompanie Lank</title>
+<title>Inventar – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,21 +91,29 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Inventar pflegen</h1><p class="wenn">Nur, wenn Inventar eingeschaltet ist.</p><p>Im Inventar steht, was die Kompanie besitzt, wie viel davon da ist und wo es liegt. Es sehen und pflegen nur alle mit der Rolle „Inventar verwalten“ oder einer Rolle mit diesem Recht (und die Admins); andere Mitglied sehen es nicht. Du findest es unter <strong>Verwaltung</strong> → <strong>Inventar</strong> (Knopf auf der Startseite der Verwaltung).</p>
-<h2>Die Liste</h2>
-<p>Die Liste ist <strong>nach Material sortiert</strong>, nicht nach Ort: Jede Zeile zeigt ein Material mit der <strong>Summe über alle Orte</strong>, z. B. „12 Stück“. Gleiche Bezeichnungen gehören zusammen, auch in anderer Groß- und Kleinschreibung. Verschiedene Einheiten werden nicht zusammengezählt, sondern nebeneinander angezeigt, z. B. „12 Stück · 3 kg“.</p>
-<p>Tippe auf ein Material, um zu sehen, wo wie viel davon liegt. Über das Suchfeld findest du Material, Orte, Kategorien und Notizen.</p>
-<h2>Anlegen</h2>
-<p>Mit <strong>+ Eintrag anlegen</strong>:</p>
-<ul><li><strong>Bezeichnung</strong> und <strong>Ort</strong> sind Pflicht. Ein Eintrag hat genau einen Ort. Liegt dasselbe Material an zwei Orten, sind das zwei Einträge.</li><li><strong>Menge</strong>: 0 oder mehr, auch mit Komma (z. B. 2,5; höchstens drei Nachkommastellen). Leer gelassen gilt 0.</li><li>Optional: <strong>Einheit</strong> (z. B. Stück, kg, m), <strong>Kategorie</strong>, <strong>Notiz</strong> und ein <strong>Grund</strong>, der im Verlauf steht.</li></ul>
-<p>Beim Ort, bei Einheit und Kategorie schlägt die App vor, was es schon gibt. Schreibst du einen bekannten Ort (oder eine bekannte Einheit oder Kategorie) nur anders groß oder klein, übernimmt die App die bekannte Schreibweise.</p>
-<h2>Ändern</h2>
-<ul><li><strong>−</strong> und <strong>+</strong> ändern die Menge um 1. Unter 0 geht es nicht.</li><li><strong>Bearbeiten</strong> ändert alle Angaben. Ein <strong>Grund</strong> (optional) steht danach im Verlauf, z. B. „Inventur“ oder „Sturmschaden“.</li><li><strong>Löschen</strong> nimmt den Eintrag aus der Liste. Die App fragt nach einem Grund (optional). Der Verlauf bleibt erhalten.</li></ul>
-<h2>Umlagern</h2>
-<p>Mit <strong>Umlagern</strong> bringst du einen Teil oder alles an einen anderen Ort:</p>
-<ul><li>Gibt es am Zielort schon dasselbe Material mit derselben Einheit, kommt die Menge dort dazu. Sonst entsteht am Zielort ein neuer Eintrag.</li><li>Lagerst du alles um, verschwindet der Eintrag am alten Ort (oder es ändert sich nur sein Ort, wenn es am Ziel noch nichts davon gibt).</li><li>Mehr als vorhanden geht nicht, und der Zielort muss ein anderer sein; dann ändert sich nichts. Ein <strong>Grund</strong> (optional) steht im Verlauf.</li></ul>
-<h2>Verlauf</h2>
-<p>Jede Änderung steht im Verlauf: wann, wer, was sich geändert hat und der Grund. <strong>Verlauf</strong> bei einem Eintrag zeigt seine Änderungen, <strong>Gesamter Verlauf</strong> oben alle (mit <strong>Ältere Einträge laden</strong> unten kommen weitere). Beim Umlagern bekommen der alte und der neue Eintrag je einen Verlaufseintrag. Auch gelöschte Einträge behalten ihren Verlauf.</p>
+<h1>Inventar</h1><p class="wenn">Nur, wenn Inventar eingeschaltet ist.</p><p>Im Inventar hältst du fest, was die Kompanie besitzt, wie viel davon da ist und wo es liegt. Hier legst du Material an, änderst Mengen und lagerst es an einen anderen Ort um.</p>
+<figure class="hilfe-bild"><img src="bilder/inventar.jpg" alt="Das Inventar mit aufgeklapptem Material und seinen Orten" loading="lazy"><figcaption>Das Inventar mit aufgeklapptem Material und seinen Orten</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf den Knopf <strong>Inventar</strong>. Gibt es in der Verwaltung nur diesen einen Knopf, öffnet sich das Inventar gleich.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>+ Eintrag anlegen</strong>: öffnet das Formular für neues Material.</li><li><strong>Gesamter Verlauf</strong>: zeigt alle Änderungen im Inventar (siehe <a href="inventar-verlauf.html" data-seite="inventar-verlauf">Verlauf im Inventar</a>).</li><li><strong>Inventar durchsuchen …</strong>: findet Material nach Bezeichnung, Ort, Kategorie oder Notiz. Bei einer Suche sind alle Treffer aufgeklappt.</li><li><strong>Die Liste</strong>: Jede Zeile ist ein Material mit der Summe über alle Orte, z. B. „18 Stück“. Darunter steht der Ort oder „an 2 Orten“. Gleiche Bezeichnungen gehören zusammen, auch in anderer Groß- und Kleinschreibung. Verschiedene Einheiten zählt die App nicht zusammen, sondern zeigt sie nebeneinander, z. B. „12 Stück · 3 kg“.</li><li><strong>Ein Material antippen</strong>: klappt es auf. Du siehst je Ort die Menge, die Kategorie und die Notiz.</li><li><strong>−</strong> und <strong>+</strong>: ändern die Menge an diesem Ort um 1.</li><li><strong>Umlagern</strong>, <strong>Bearbeiten</strong>, <strong>Verlauf</strong>, <strong>Löschen</strong>: Knöpfe für den Eintrag an diesem Ort.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Material anlegen</h3>
+<ol><li>Tippe auf <strong>+ Eintrag anlegen</strong>.</li><li>Trage die <strong>Bezeichnung</strong> und den <strong>Ort</strong> ein. Beides ist Pflicht.</li><li>Trage die <strong>Menge</strong> ein. Leer gelassen gilt 0. Kommazahlen gehen auch, z. B. 2,5.</li><li>Trage bei Bedarf <strong>Einheit</strong> (z. B. Stück, kg, m), <strong>Kategorie (optional)</strong> und <strong>Notiz (optional)</strong> ein.</li><li>Schreibe bei Bedarf einen <strong>Grund</strong> dazu, z. B. „Spende“. Er steht im Verlauf.</li><li>Tippe auf <strong>Anlegen</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/inventar-anlegen.jpg" alt="Das Formular für einen neuen Eintrag, ausgefüllt" loading="lazy"><figcaption>Das Formular für einen neuen Eintrag, ausgefüllt</figcaption></figure>
+<p>Bei Ort, Einheit und Kategorie schlägt die App vor, was es schon gibt. Schreibst du einen bekannten Ort, eine Einheit oder eine Kategorie nur anders groß oder klein, übernimmt die App die bekannte Schreibweise.</p>
+<h3>Die Menge ändern</h3>
+<ol><li>Tippe auf das Material, um es aufzuklappen.</li><li>Tippe beim richtigen Ort auf <strong>−</strong> oder <strong>+</strong>.</li></ol>
+<p>Für größere Änderungen tippst du auf <strong>Bearbeiten</strong>, trägst die neue <strong>Menge</strong> ein, schreibst bei Bedarf einen Grund dazu (z. B. „Inventur“) und tippst auf <strong>Speichern</strong>.</p>
+<h3>Material umlagern</h3>
+<ol><li>Klappe das Material auf und tippe beim Ort, von dem es weggeht, auf <strong>Umlagern</strong>.</li><li>Trage die <strong>Menge</strong> ein. Vorgegeben ist alles, was dort liegt.</li><li>Trage den <strong>Zielort</strong> ein.</li><li>Schreibe bei Bedarf einen <strong>Grund (optional)</strong> dazu.</li><li>Tippe auf <strong>Umlagern</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/inventar-umlagern.jpg" alt="Das Formular zum Umlagern, ausgefüllt" loading="lazy"><figcaption>Das Formular zum Umlagern, ausgefüllt</figcaption></figure>
+<h3>Einen Eintrag löschen</h3>
+<ol><li>Klappe das Material auf und tippe beim Ort auf <strong>Löschen</strong>.</li><li>Die App fragt nach einem Grund. Du kannst ihn leer lassen.</li><li>Bestätige mit <strong>OK</strong>.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Ein Eintrag hat genau einen Ort. Liegt dasselbe Material an zwei Orten, sind das zwei Einträge.</li><li>Die Menge ist 0 oder mehr, mit höchstens drei Nachkommastellen. Unter 0 geht es nicht; ist weniger als 1 da, ist <strong>−</strong> gesperrt.</li><li>Beim Umlagern: Gibt es am Zielort schon dasselbe Material mit derselben Einheit, kommt die Menge dort dazu. Sonst entsteht am Zielort ein neuer Eintrag.</li><li>Lagerst du alles um, verschwindet der Eintrag am alten Ort. Gibt es am Ziel noch nichts davon, ändert sich nur sein Ort.</li><li>Mehr umlagern, als da ist, geht nicht. Der Zielort muss ein anderer sein. Die App meldet das, und nichts ändert sich.</li><li>Änderst du unter <strong>Bearbeiten</strong> den Ort, berichtigst du nur die Angabe. Mit gleichem Material am neuen Ort wird dabei nichts zusammengelegt; dafür nimmst du <strong>Umlagern</strong>.</li><li>Jede Änderung steht im Verlauf, auch bei gelöschten Einträgen.</li><li>Das Inventar sehen nur Personen, die es pflegen dürfen. Andere Mitglied sehen es nicht.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="inventar-verlauf.html" data-seite="inventar-verlauf">Verlauf im Inventar</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,13 +91,27 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Wartungsmodus</h1><p>Der Wartungsmodus sperrt die App für alle außer Admins, z. B. während einer Datenübernahme oder größerer Korrekturen. Du schaltest ihn unter <strong>Verwaltung → Einstellungen → Wartungsmodus</strong> ein und wieder aus. Mit WordPress geht das auch im WP-Admin unter <strong>Einstellungen</strong> auf der Seite der App (Name eurer Kompanie mit „– App“ dahinter), falls die App selbst nicht erreichbar ist.</p>
-<h2>Einschalten</h2>
-<p>Trag bei Bedarf eine <strong>Begründung</strong> ein, z. B. „Umstellung auf die neue App, bis ca. 18 Uhr“ (höchstens 500 Zeichen). Sie erscheint auf der Wartungsseite. Tippe dann auf <strong>Wartungsmodus einschalten</strong> und bestätige die Rückfrage. Während der Wartung kannst du die Begründung ändern und mit <strong>Begründung speichern</strong> übernehmen.</p>
-<p>Solange der Modus an ist:</p>
-<ul><li>Alle anderen sehen nur eine <strong>Wartungsseite</strong> mit der Begründung und <strong>Erneut versuchen</strong>. Daten, die schon offline auf dem Handy liegen, bleiben dort gespeichert. Wer nicht angemeldet ist, findet dort <strong>Anmelden (Admins)</strong>.</li><li>Du selbst arbeitest normal; ein rotes Banner oben erinnert dich daran, dass die Wartung läuft.</li><li>Hintergrundaufgaben wie der Abgleich von Kalender und Galerie pausieren. Updates und Statusmeldungen laufen weiter. Benachrichtigungen, die in dieser Zeit entstehen, gehen erst nach dem Ende raus.</li><li>Die übrige Webseite bleibt erreichbar, auch die Terminliste und die Galerie, falls die App sie dort anzeigt.</li></ul>
-<h2>Beenden</h2>
-<p>Tippe im roten Banner auf <strong>Beenden</strong> oder unter <strong>Wartungsmodus</strong> auf <strong>Wartungsmodus beenden</strong>. Die anderen sehen die App wieder, sobald sie auf <strong>Erneut versuchen</strong> tippen oder die App neu öffnen. Wer den Modus wann ein- oder ausgeschaltet hat, steht unter <strong>Verlauf</strong> (die letzten 20 Änderungen).</p>
+<h1>Wartungsmodus</h1><p>Der Wartungsmodus sperrt die App vorübergehend für alle außer Admins, zum Beispiel während einer Datenübernahme oder größerer Korrekturen. Hier schaltest du ihn ein und wieder aus.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-wartungsmodus.jpg" alt="Die Seite Wartungsmodus mit eingetragener Begründung" loading="lazy"><figcaption>Die Seite Wartungsmodus mit eingetragener Begründung</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Wartungsmodus</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Begründung (optional, erscheint auf der Wartungsseite)</strong>: ein Text für alle anderen, höchstens 500 Zeichen. Darunter steht, wie viele Zeichen du schon verwendet hast.</li><li><strong>Wartungsmodus einschalten</strong>: solange der Modus aus ist.</li><li><strong>Begründung speichern</strong> und <strong>Wartungsmodus beenden</strong>: solange der Modus an ist.</li><li><strong>Verlauf</strong>: zum Aufklappen; wer den Modus wann ein- oder ausgeschaltet hat (die letzten 20 Änderungen).</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Den Wartungsmodus einschalten</h3>
+<ol><li>Trage bei Bedarf eine <strong>Begründung</strong> ein, z. B. „Umstellung auf die neue App, bis ca. 18 Uhr“.</li><li>Tippe auf <strong>Wartungsmodus einschalten</strong>.</li><li>Bestätige die Rückfrage. Die App meldet „Wartungsmodus ist an.“</li></ol>
+<p>Solange der Modus an ist, steht für dich oben auf jeder Seite ein rotes Banner. Du arbeitest ganz normal weiter.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-wartungsmodus-banner.jpg" alt="Das rote Banner, das Admins während der Wartung sehen" loading="lazy"><figcaption>Das rote Banner, das Admins während der Wartung sehen</figcaption></figure>
+<p>Alle anderen sehen nur die Wartungsseite mit deiner Begründung und dem Knopf <strong>Erneut versuchen</strong>. Wer nicht angemeldet ist, findet dort <strong>Anmelden (Admins)</strong>.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-wartungsmodus-seite.jpg" alt="Die Wartungsseite, wie alle anderen sie sehen" loading="lazy"><figcaption>Die Wartungsseite, wie alle anderen sie sehen</figcaption></figure>
+<h3>Die Begründung ändern</h3>
+<ol><li>Ändere den Text bei <strong>Begründung</strong>.</li><li>Tippe auf <strong>Begründung speichern</strong>.</li></ol>
+<h3>Den Wartungsmodus beenden</h3>
+<ol><li>Tippe im roten Banner auf <strong>Beenden</strong> oder hier auf <strong>Wartungsmodus beenden</strong>.</li><li>Die anderen sehen die App wieder, sobald sie auf <strong>Erneut versuchen</strong> tippen oder die App neu öffnen.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Daten, die schon offline auf den Handys liegen, bleiben dort gespeichert. Die Wartungsseite hat aber Vorrang.</li><li>Hintergrundaufgaben wie der Abgleich von Kalender und Galerie pausieren. Updates und Statusmeldungen laufen weiter. Benachrichtigungen, die in dieser Zeit entstehen, gehen erst nach dem Ende raus.</li><li>Mit WordPress bleibt die übrige Webseite erreichbar. Den Wartungsmodus kannst du dort auch im WordPress-Backend auf der Seite der App ein- und ausschalten, falls die App selbst nicht erreichbar ist.</li><li>Schaust du dir die App gerade als andere Rolle an, siehst du ebenfalls die Wartungsseite (siehe <a href="admin-vorschau.html" data-seite="admin-vorschau">App als Rolle ansehen</a>).</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-einstellungen.html" data-seite="admin-einstellungen">Einstellungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

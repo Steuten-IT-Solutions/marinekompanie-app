@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,13 +91,19 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Galerie</h1><p class="wenn">Nur, wenn Galerie eingeschaltet ist.</p><p>Die <strong>Galerie</strong> zeigt die Fotoalben der Marinekompanie Lank, nach Jahren geordnet, das neueste Jahr oben. Unter jedem Album steht, wie viele Bilder es hat.</p>
-<h2>Bilder ansehen</h2>
-<ol><li>Ein Album antippen; die Bilder erscheinen als kleine Vorschau.</li><li>Ein Bild antippen: Es öffnet sich groß. Zum nächsten oder vorherigen Bild wischst du zur Seite oder tippst auf die Pfeile, am Computer gehen auch die Pfeiltasten.</li><li>Vergrößern: zwei Finger auseinanderziehen (bis zu vierfach) oder doppelt tippen. Vergrößert verschiebst du das Bild mit einem Finger; doppelt tippen stellt es wieder zurück.</li><li><strong>✕</strong> (oder die Escape-Taste) schließt das Bild, <strong>‹ Alle Alben</strong> führt zurück zur Übersicht.</li></ol>
-<h2>Interne Bilder</h2>
-<p>Manche Bilder sind nur für Mitglied bestimmt. Du siehst sie nur, wenn du als Mitglied angemeldet bist; sie tragen ein Schloss 🔒, und unter dem Album steht, wie viele davon intern sind. Ohne Anmeldung fehlen sie einfach. Wie du dich anmeldest: <a href="anmelden-und-konto.html" data-seite="anmelden-und-konto">Anmelden und Konto</a>.</p>
+<h1>Galerie</h1><p class="wenn">Nur, wenn Galerie eingeschaltet ist.</p><p>Die <strong>Galerie</strong> zeigt die Fotoalben der Marinekompanie Lank, nach Jahren geordnet, das neueste Jahr oben. Von hier öffnest du ein Album und siehst dir die Bilder an.</p>
+<figure class="hilfe-bild"><img src="bilder/galerie.jpg" alt="Übersicht der Alben eines Jahres mit Titel und Anzahl der Bilder" loading="lazy"><figcaption>Übersicht der Alben eines Jahres mit Titel und Anzahl der Bilder</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Galerie</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Jahr</strong>: Überschrift über den Alben dieses Jahres.</li><li><strong>Album</strong>: ein Vorschaubild, der Titel und die Anzahl der Bilder, z. B. „3 Bilder · 1 intern“. „intern“ zählt die Bilder, die nur Mitglied sehen.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Ein Album öffnen</h3>
+<ol><li>Tippe auf das Album.</li><li>Die Bilder erscheinen als kleine Vorschau. Wie es weitergeht, steht unter <a href="galerie-album.html" data-seite="galerie-album">Ein Album ansehen</a>.</li></ol>
 <h2>Gut zu wissen</h2>
-<ul><li>Die Bilder kommen aus einem Ordner, den die Kompanie pflegt; die App gleicht ihn regelmäßig ab. Neue Bilder brauchen beim ersten Öffnen manchmal einen Moment, bis sie aufbereitet sind. Die App lädt sie dann von selbst nach.</li><li>Fehlt ein Album oder ein Bild, wende dich an die Verantwortlichen eurer Kompanie.</li></ul>
+<ul><li>Manche Bilder sind nur für Mitglied bestimmt. Du siehst sie nur, wenn du als Mitglied angemeldet bist. Ohne Anmeldung fehlen sie einfach, ebenso Alben, die nur solche Bilder enthalten. Wie du dich anmeldest: <a href="anmelden.html" data-seite="anmelden">Anmelden</a>.</li><li>Die Bilder kommen aus einem Ordner, den die Marinekompanie Lank pflegt; die App gleicht ihn regelmäßig ab. Neue Alben erscheinen deshalb nicht sofort.</li><li>Gibt es noch keine Bilder, steht dort „Noch keine Bilder in der Galerie.“</li><li>Fehlt ein Album oder ein Bild, wende dich an die Verantwortlichen der Marinekompanie Lank.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="galerie-album.html" data-seite="galerie-album">Ein Album ansehen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

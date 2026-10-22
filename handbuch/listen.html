@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,26 +91,22 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Listen</h1><p class="wenn">Nur, wenn Listen eingeschaltet ist.</p><p>Wer die Rolle „Listen verwalten“ oder eine Rolle mit diesem Recht hat, legt unter <strong>Verwaltung → Listen</strong> Listen zum Ausdrucken oder als CSV für Excel an, z. B. Unterschriftenlisten, Teilnehmerlisten oder Listen zum Abhaken. Alle mit diesem Recht sehen und bearbeiten dieselben Listen.</p>
-<h2>Liste anlegen</h2>
-<p>Unter <strong>Neue Liste</strong> einen Titel eintragen und <strong>Anlegen</strong> tippen. Die neue Liste hat die Spalten <em>Name</em> (Nachname), <em>Vorname</em> und eine breite leere Spalte <em>Unterschrift</em>, aber noch keine Zeilen; eine Nummer je Zeile bekommst du mit der Datenspalte <em>Nr.</em> Unter <strong>Liste</strong> trägst du Titel, einen Untertitel oder Hinweis (z. B. „Bitte bis Freitag eintragen“) und ein Datum ein und wählst Hoch- oder Querformat für den Druck.</p>
-<p>In der Übersicht öffnet ein Tipp eine Liste. <strong>Kopieren</strong> legt eine Kopie mit allen Spalten und Zeilen an, z. B. die Liste vom letzten Jahr als Vorlage. <strong>Löschen</strong> löscht die Liste.</p>
-<p>Änderungen speicherst du mit <strong>Speichern</strong> unten in der Liste. Hat jemand anderes die Liste inzwischen geändert, speichert die App nicht, sondern meldet das; lade die Liste dann neu und trage deine Änderungen noch einmal ein.</p>
-<h2>Spalten</h2>
-<p>Es gibt zwei Arten von Spalten:</p>
-<ul><li><strong>Datenspalten</strong> füllt die App mit den Angaben der Mitglieder: Nr. (zählt die Zeilen), Name, Vorname, Nachname, Rolle, Dienstgrad, Titel, Geburtstag, Punkte und offene Strafen. Zur Auswahl stehen nur Spalten, deren Bereich eingeschaltet ist und deren Angaben du in der App ohnehin sehen darfst. Die Rolle siehst du z. B. nur, wenn du die Mitgliederliste der Verwaltung siehst, Punkte nur mit dem Recht, sie zu vergeben. Geburtstage stehen nur in der Liste, wenn die Person sie für andere freigegeben hat, und nur mit Tag und Monat.</li><li><strong>Leere Spalten</strong> bleiben zum Ausfüllen auf Papier, z. B. „Unterschrift“, „Bezahlt“ oder „Größe“. Mit <strong>Kästchen zum Abhaken</strong> steht in jeder Zeile ein Kästchen.</li></ul>
-<p>Die <strong>Überschrift</strong> jeder Spalte kannst du ändern; ohne eigene Überschrift nimmt die App die Bezeichnung der Datenspalte. Die <strong>Breite</strong> (schmal, normal, breit) bestimmt, wie viel Platz die Spalte beim Drucken bekommt. Die Reihenfolge änderst du, indem du eine Spalte am Griff links (sechs Punkte) an die gewünschte Stelle ziehst. Eine Liste hat höchstens 20 Spalten.</p>
-<p>Öffnet jemand die Liste, der eine Datenspalte nicht sehen darf, bleibt sie für ihn leer, auch beim Drucken und in der CSV-Datei.</p>
-<h2>Zeilen und „Mitglieder aktualisieren“</h2>
-<p><strong>Mitglieder aktualisieren</strong> legt für jedes Mitglied eine Zeile an, das noch keine hat, und löscht die Zeilen von Konten, die es nicht mehr gibt oder die kein Mitglied mehr sind (z. B. jetzt Gast). Gasts, Ehemalige und Rollen ohne Mitgliederbereich (z. B. Anwärter) kommen nicht in die Liste. Bevor sich etwas ändert, zeigt die App, welche Zeilen dazukommen und welche gelöscht werden; erst <strong>Übernehmen</strong> ändert die Liste. Neue Mitglieder ordnet sie nach dem Nachnamen zwischen die vorhandenen ein.</p>
-<p>Mit <strong>+ Leere Zeile</strong> und <strong>+ 5 leere Zeilen</strong> fügst du eigene Zeilen hinzu, z. B. für Gäste, die sich vor Ort eintragen. In eine eigene Zeile kannst du einen Namen schreiben oder sie leer lassen. Eigene Zeilen bleiben beim Aktualisieren stehen.</p>
-<p>Zeilen verschiebst du am Griff, <strong>✕</strong> entfernt eine Zeile. Entfernst du die Zeile eines Mitglieds, legt das nächste <strong>Mitglieder aktualisieren</strong> sie wieder an. <strong>Nach Namen sortieren</strong> sortiert die ganze Liste nach Nachnamen; leere Zeilen kommen ans Ende. Eine Liste hat höchstens 500 Zeilen.</p>
-<p>Wird ein Konto gelöscht, bleibt seine Zeile ohne Namen stehen, bis du die Liste aktualisierst.</p>
-<h2>Drucken und CSV</h2>
-<p>Unter <strong>Ausgabe</strong> siehst du die Liste so, wie sie gedruckt wird: oben ein Balken in der Farbe der Kompanie mit Logo, Titel und Untertitel, darunter Name der Kompanie, Datum und das Datum des Ausdrucks. Die Spaltenüberschriften stehen weiß auf der Farbe der Kompanie; in <strong>schmalen</strong> Spalten (außer Nr.) sind sie schräg gestellt, damit auch längere Überschriften wie „Anzahl Kinder“ über eine schmale Spalte zum Ankreuzen passen. Spalten mit Namen sind mindestens so breit wie der längste Name, damit Namen nicht umbrechen; die übrigen Spalten teilen sich den Rest. Die Zeilen sind abwechselnd leicht in der Farbe der Kompanie hinterlegt. Der Tabellenkopf steht auf jeder Seite.</p>
-<ul><li><strong>Drucken / PDF</strong> öffnet den Druckdialog. Als PDF speichern: dort „Als PDF speichern“ als Drucker wählen. Als Dateinamen schlägt der Browser den Titel der Liste vor.</li><li><strong>CSV herunterladen</strong> speichert die Liste als Datei für Excel oder eine andere Tabellenkalkulation, mit dem Titel als Dateinamen.</li></ul>
-<p>Gedruckt und heruntergeladen wird der Stand auf dem Bildschirm, auch wenn du ihn noch nicht gespeichert hast.</p>
-<p class="hinweis">Die Listen enthalten personenbezogene Daten. Ausdrucke und Dateien bitte nach Gebrauch vernichten bzw. löschen.</p>
+<h1>Listen</h1><p class="wenn">Nur, wenn Listen eingeschaltet ist.</p><p>Hier legst du Listen zum Ausdrucken oder als Datei für Excel an, z. B. Unterschriftenlisten, Teilnehmerlisten oder Listen zum Abhaken. Du siehst alle gespeicherten Listen, öffnest, kopierst oder löschst sie.</p>
+<figure class="hilfe-bild"><img src="bilder/listen.jpg" alt="Die Übersicht der Listen" loading="lazy"><figcaption>Die Übersicht der Listen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf den Knopf <strong>Listen</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Die Listen</strong>: je Liste der Titel, das Datum (falls eingetragen), die Zahl der Zeilen und wer sie zuletzt geändert hat.</li><li><strong>Öffnen</strong>: öffnet die Liste zum Bearbeiten, Drucken und Herunterladen. Ein Tipp auf die Liste selbst tut dasselbe.</li><li><strong>Kopieren</strong>: legt eine Kopie mit allen Spalten und Zeilen an. Ihr Titel endet auf „(Kopie)“.</li><li><strong>Löschen</strong>: löscht die Liste nach einer Rückfrage.</li><li><strong>Neue Liste</strong>: unten, zum Anlegen einer neuen Liste.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Eine neue Liste anlegen</h3>
+<ol><li>Trage unter <strong>Neue Liste</strong> einen <strong>Titel</strong> ein.</li><li>Tippe auf <strong>Anlegen</strong>.</li><li>Die neue Liste öffnet sich. Wie es weitergeht, steht unter <a href="liste-bearbeiten.html" data-seite="liste-bearbeiten">Liste bearbeiten</a>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/listen-anlegen.jpg" alt="Eine neue Liste mit Titel" loading="lazy"><figcaption>Eine neue Liste mit Titel</figcaption></figure>
+<h3>Eine Liste vom letzten Mal wiederverwenden</h3>
+<ol><li>Tippe bei der alten Liste auf <strong>Kopieren</strong>.</li><li>Öffne die Kopie und ändere Titel und Datum.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Eine neue Liste hat die Spalten „Name“ (Nachname), „Vorname“ und eine breite leere Spalte „Unterschrift“. Zeilen hat sie noch keine.</li><li>Alle, die Listen pflegen dürfen, sehen und bearbeiten dieselben Listen. Andere Mitglied sehen die Listen nicht.</li><li>Die Listen enthalten personenbezogene Daten. Vernichte Ausdrucke nach Gebrauch und lösche heruntergeladene Dateien.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="liste-bearbeiten.html" data-seite="liste-bearbeiten">Liste bearbeiten</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

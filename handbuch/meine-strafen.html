@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,11 +91,16 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Meine Strafen</h1><p class="wenn">Nur, wenn Strafen eingeschaltet ist.</p><p>Unter <strong>Meins → Strafen</strong> siehst du deine eigenen Einträge. Andere Mitglieder sehen sie nicht.</p>
-<p>Oben steht der Betrag, der noch <strong>offen</strong> ist. Darunter stehen die Einträge in zwei Listen, <strong>Offen</strong> und <strong>Bezahlt</strong>, jeweils die neuesten zuerst, mit Grund, Datum, wer ihn eingetragen hat, und Betrag.</p>
-<p>Als bezahlt markieren die Verantwortlichen einen Eintrag, sobald das Geld da ist; du selbst kannst hier nichts ändern. Wird ein Eintrag storniert, verschwindet er ganz.</p>
-<h2>Benachrichtigung</h2>
-<p>Bei jedem neuen Eintrag kann dir die App eine Nachricht schicken. Du schaltest das unter <strong>Meins → Konto → Benachrichtigungen einstellen</strong> mit <strong>Strafen: neue Einträge</strong> ein oder aus. Betrag und Grund stehen nur in der Nachricht, wenn du dort zusätzlich <strong>Strafen: Betrag und Grund in der Nachricht zeigen</strong> einschaltest; sonst kommt nur ein Hinweis. Mehr dazu: <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
+<h1>Meine Strafen</h1><p class="wenn">Nur, wenn Strafen eingeschaltet ist.</p><p>Hier siehst du, wie viel du bei den Strafen noch zahlen musst und welche Einträge schon bezahlt sind. Die Seite ist nur zum Ansehen; andere Mitglieder sehen deine Einträge nicht.</p>
+<figure class="hilfe-bild"><img src="bilder/meine-strafen.jpg" alt="Meine Strafen mit offenem Betrag und den Listen Offen und Bezahlt" loading="lazy"><figcaption>Meine Strafen mit offenem Betrag und den Listen Offen und Bezahlt</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Meins</strong>, dann oben auf das Menü und wähle <strong>Strafen</strong>. Oder tippe in der Übersicht auf die Kachel <strong>Offen</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Offen: Strafen</strong>: der Betrag, der noch offen ist.</li><li><strong>Offen</strong>: Einträge, die du noch zahlen musst.</li><li><strong>Bezahlt</strong>: Einträge, die schon bezahlt sind.</li><li>Jeder Eintrag zeigt Grund, Datum, wer ihn eingetragen hat, ein Schild „offen“ oder „bezahlt“ und rechts den Betrag. Die neuesten stehen oben.</li><li>Ohne Einträge steht dort „Keine Einträge – vorbildlich!“</li></ul>
+<h2>Gut zu wissen</h2>
+<ul><li>Du selbst kannst hier nichts ändern. Sobald das Geld da ist, markieren die Verantwortlichen den Eintrag als bezahlt. Wird ein Eintrag storniert, verschwindet er ganz.</li><li>Bei jedem neuen Eintrag kann dir die App eine Nachricht schicken. Das schaltest du unter <strong>Meins</strong> → <strong>Konto</strong> → <strong>Benachrichtigungen einstellen</strong> mit <strong>Strafen: neue Einträge</strong> ein oder aus.</li><li>Betrag und Grund stehen nur in der Nachricht, wenn du dort zusätzlich <strong>Strafen: Betrag und Grund in der Nachricht zeigen</strong> einschaltest. Sonst kommt nur der Hinweis „Tippen zum Ansehen.“</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

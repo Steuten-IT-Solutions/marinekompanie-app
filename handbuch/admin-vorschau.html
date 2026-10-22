@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>App als Rolle ansehen (Vorschau) – Handbuch der App der Marinekompanie Lank</title>
+<title>App als Rolle ansehen – Handbuch der App der Marinekompanie Lank</title>
 <link rel="icon" type="image/png" href="../favicon.png">
 <style>
 /* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,16 +91,22 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>App als Rolle ansehen (Vorschau)</h1><p>Mit der Vorschau prüfst du, was eine Rolle in der App sieht – welche Tabs, Bereiche, Knöpfe und Inhalte –, ohne dich mit einem anderen Konto anzumelden. Du findest sie unter <strong>Verwaltung → Einstellungen → Rollen</strong>.</p>
-<h2>Vorschau starten</h2>
-<ul><li><strong>Ansehen</strong> neben einer Rolle zeigt die App, wie eine Person mit genau dieser Rolle sie sieht. Admin selbst lässt sich nicht ansehen.</li><li><strong>App ohne Anmeldung ansehen</strong> zeigt die öffentliche Ansicht, wie Besucher ohne Konto sie sehen.</li></ul>
-<p>Oben auf jeder Seite steht dann ein Banner, z. B. „Vorschau als Mitglied – nur ansehen“, mit <strong>Beenden</strong>. Damit kommst du zurück zu den Rollen, wieder mit allen Rechten.</p>
-<h2>Was die Vorschau zeigt</h2>
-<ul><li>Alles kommt vom Server mit den Rechten der Rolle: Termine und Kalender, Bilder, Dokumente, Abzeichen und die eingeschalteten Bereiche – nicht mehr, als die Rolle wirklich sieht.</li><li>Persönliche Bereiche wie <strong>Meins</strong>, der eigene Geburtstag oder das Konto zeigen <strong>deine eigenen Daten</strong>, soweit die Rolle diese Bereiche überhaupt hat.</li><li>Angesehen wird immer <strong>eine</strong> Rolle, ohne Zusatzrollen. Wer mehrere Rollen hat, sieht alles, was eine seiner Rollen sieht; Kombinationen zeigt die Vorschau nicht.</li><li>Ist der <a href="admin-wartungsmodus.html" data-seite="admin-wartungsmodus">Wartungsmodus</a> an, siehst du als andere Rolle die Wartungsseite – wie alle außer Admins. Das Banner mit <strong>Beenden</strong> bleibt.</li></ul>
-<h2>Nur ansehen</h2>
-<p>In der Vorschau lässt sich nichts ändern: Punkte buchen, ans Schwarze Brett schreiben, abstimmen, Passwort ändern, Benachrichtigungen einrichten oder dich anmelden lehnt der Server ab („In der Vorschau kannst du nichts ändern.“). Die Knöpfe bleiben trotzdem sichtbar, damit du siehst, was die Rolle angeboten bekommt. <strong>Abmelden</strong> geht weiterhin; es beendet die Vorschau und meldet dich ab.</p>
+<h1>App als Rolle ansehen</h1><p>Mit der Vorschau prüfst du, was eine Rolle in der App sieht: welche Tabs, Bereiche, Knöpfe und Inhalte. Du brauchst dafür kein anderes Konto.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-vorschau.jpg" alt="Die App in der Vorschau als Mitglied, oben das Banner mit Beenden" loading="lazy"><figcaption>Die App in der Vorschau als Mitglied, oben das Banner mit Beenden</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Rollen</strong>. Dort startest du die Vorschau.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Vorschau als …</strong> – nur ansehen: das Banner oben auf jeder Seite, solange die Vorschau läuft. Bei der öffentlichen Ansicht steht dort <strong>Vorschau ohne Anmeldung</strong>.</li><li><strong>Beenden</strong>: im Banner; beendet die Vorschau.</li><li>Darunter die App so, wie die Rolle sie sieht.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Die App als eine Rolle ansehen</h3>
+<ol><li>Tippe auf der Seite <strong>Rollen</strong> neben der Rolle auf <strong>Ansehen</strong>.</li><li>Die App lädt neu und beginnt auf der Startseite dieser Rolle. Sieh dich in Ruhe um.</li><li>Tippe im Banner oben auf <strong>Beenden</strong>. Du kommst zurück zur Seite <strong>Rollen</strong>, wieder mit allen Rechten.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/admin-vorschau-starten.jpg" alt="Der Knopf App ohne Anmeldung ansehen auf der Seite Rollen" loading="lazy"><figcaption>Der Knopf App ohne Anmeldung ansehen auf der Seite Rollen</figcaption></figure>
+<h3>Die App ohne Anmeldung ansehen</h3>
+<ol><li>Tippe auf der Seite <strong>Rollen</strong> unten auf <strong>App ohne Anmeldung ansehen</strong>.</li><li>Du siehst die öffentliche Ansicht, wie Besucher ohne Konto sie sehen.</li><li>Tippe im Banner auf <strong>Beenden</strong>.</li></ol>
 <h2>Gut zu wissen</h2>
-<ul><li>Die Vorschau gilt nur im aktuellen Browser-Tab und bleibt beim Neuladen erhalten. In einem anderen Tab siehst du die App normal.</li><li>Sie braucht eine Internetverbindung. Offline oder wenn du nicht mehr angemeldet bist, endet sie von selbst.</li><li>Was du in der Vorschau lädst, speichert die App nicht für den Offline-Betrieb; deine eigenen gespeicherten Daten bleiben unverändert.</li></ul>
+<ul><li><strong>Nur ansehen:</strong> In der Vorschau lässt sich nichts ändern. Versuchst du es, meldet die App „In der Vorschau kannst du nichts ändern.“ Die Knöpfe bleiben trotzdem sichtbar, damit du siehst, was die Rolle angeboten bekommt. <strong>Abmelden</strong> geht weiterhin; es beendet die Vorschau und meldet dich ab.</li><li><strong>Deine eigenen Daten:</strong> Persönliche Seiten wie <strong>Meins</strong> zeigen deine eigenen Daten, soweit die Rolle diese Seiten hat. Alles andere kommt mit genau den Rechten der Rolle.</li><li><strong>Eine Rolle, keine Zusatzrollen:</strong> Angesehen wird immer genau eine Rolle. Kombinationen mehrerer Rollen zeigt die Vorschau nicht.</li><li>Admin selbst lässt sich nicht ansehen.</li><li>Ist der <a href="admin-wartungsmodus.html" data-seite="admin-wartungsmodus">Wartungsmodus</a> an, siehst du als andere Rolle die Wartungsseite, wie alle außer Admins. Das Banner mit <strong>Beenden</strong> bleibt.</li><li>Die Vorschau gilt nur im aktuellen Browser-Tab und bleibt beim Neuladen erhalten. In einem anderen Tab siehst du die App normal.</li><li>Sie braucht eine Internetverbindung. Lädt die App ohne Verbindung neu oder bestätigt der Server die Vorschau nicht mehr (z. B. weil die Rolle gelöscht wurde), endet sie von selbst. Was du in der Vorschau lädst, speichert die App nicht für den Offline-Betrieb; deine eigenen gespeicherten Daten bleiben unverändert.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

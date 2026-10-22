@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,14 +91,23 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Dokumente</h1><p class="wenn">Nur, wenn Dokumente eingeschaltet ist.</p><p>Unter <strong>Dokumente</strong> findest du Dateien wie Satzung, Protokolle oder Formulare.</p>
-<h2>Finden</h2>
-<p>Die Dokumente sind nach Kategorien geordnet; was keiner Kategorie angehört, steht zuletzt unter „Weitere Dokumente“. Beim Öffnen sind alle Kategorien eingeklappt; ein Tipp auf den Namen klappt sie auf oder zu. In Klammern steht, wie viele Dokumente darin liegen. Bei jedem Dokument stehen der Stand (Datum), die Art der Datei und ihre Größe.</p>
-<p>Oben wählst du die <strong>Sortierung</strong> innerhalb der Kategorien: <strong>Stand neu → alt</strong> (vorgewählt), <strong>Stand alt → neu</strong>, <strong>Name A–Z</strong> oder <strong>Name Z–A</strong>. Dein Gerät merkt sich die Wahl.</p>
-<h2>Öffnen und herunterladen</h2>
-<ul><li><strong>Öffnen</strong> zeigt PDFs und Bilder direkt in der App. Mit <strong>‹ Alle Dokumente</strong> kommst du zurück; die Kategorie bleibt aufgeklappt.</li><li><strong>Herunterladen</strong> speichert die Datei. Andere Dateien, z. B. Word, Excel oder PowerPoint, gibt es nur zum Herunterladen. Auf dem iPhone öffnet sich dafür das Teilen-Menü („In Dateien sichern“).</li></ul>
-<h2>Offline</h2>
-<p>Was du einmal geöffnet oder heruntergeladen hast, ist auch ohne Netz verfügbar; dann steht „Auch offline verfügbar“ dabei. Gibt es eine neue Fassung, lädt die App beim nächsten Öffnen die neue. Beim Abmelden werden die gespeicherten Dokumente vom Gerät gelöscht.</p>
+<h1>Dokumente</h1><p class="wenn">Nur, wenn Dokumente eingeschaltet ist.</p><p>Unter <strong>Dokumente</strong> findest du Dateien der Marinekompanie Lank wie Satzung, Protokolle oder Formulare. Hier suchst du ein Dokument, öffnest es oder lädst es auf dein Gerät.</p>
+<figure class="hilfe-bild"><img src="bilder/dokumente.jpg" alt="Die Liste der Dokumente, nach Kategorien geordnet" loading="lazy"><figcaption>Die Liste der Dokumente, nach Kategorien geordnet</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Dokumente</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Sortierung</strong>: legt fest, in welcher Reihenfolge die Dokumente innerhalb einer Kategorie stehen.</li><li><strong>Kategorien</strong>: je eine Zeile mit dem Namen und in Klammern der Zahl der Dokumente, z. B. „Protokolle (2)“. Was keiner Kategorie angehört, steht zuletzt unter <strong>Weitere Dokumente</strong>. Gibt es gar keine Kategorien, stehen alle Dokumente in einer Liste.</li><li><strong>Dokument</strong>: Titel, <strong>Stand</strong> (das Datum des Dokuments), die Art der Datei (z. B. PDF, Bild, Word) und ihre Größe.</li><li><strong>Auch offline verfügbar</strong>: steht bei Dokumente, die schon auf deinem Gerät gespeichert sind.</li><li><strong>Eingeschränkt</strong>: steht bei Dokumente, die nur sieht, wer Dokumente pflegt. Andere Mitglied sehen sie gar nicht.</li><li><strong>Dokumente verwalten</strong>: nur, wenn du Dokumente pflegen darfst. Dort lädst du Dokumente hoch und änderst sie.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Ein Dokument finden</h3>
+<ol><li>Wähle bei <strong>Sortierung</strong>, wie die Dokumente geordnet sein sollen: <strong>Stand neu → alt</strong> (vorgewählt), <strong>Stand alt → neu</strong>, <strong>Name A–Z</strong> oder <strong>Name Z–A</strong>.</li><li>Tippe auf den Namen einer Kategorie. Sie klappt auf und zeigt ihre Dokumente. Ein zweiter Tipp klappt sie wieder zu.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/dokumente-kategorie.jpg" alt="Eine aufgeklappte Kategorie mit den Knöpfen Öffnen und Herunterladen" loading="lazy"><figcaption>Eine aufgeklappte Kategorie mit den Knöpfen Öffnen und Herunterladen</figcaption></figure>
+<h3>Ein Dokument öffnen oder herunterladen</h3>
+<ol><li>Tippe beim Dokument auf <strong>Öffnen</strong>. PDFs und Bilder zeigt die App direkt an (siehe <a href="dokument-ansehen.html" data-seite="dokument-ansehen">Dokument ansehen</a>).</li><li>Oder tippe auf <strong>Herunterladen</strong>, um die Datei auf deinem Gerät zu speichern. Auf dem iPhone öffnet sich dafür das Teilen-Menü; dort wählst du z. B. „In Dateien sichern“.</li></ol>
+<p>Word-, Excel-, PowerPoint- und OpenDocument-Dateien haben nur den Knopf <strong>Herunterladen</strong>.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Beim Öffnen der Seite sind alle Kategorien zugeklappt. Kommst du von einem geöffneten Dokument zurück, ist seine Kategorie aufgeklappt.</li><li>Dein Gerät merkt sich die gewählte Sortierung. Sie gilt auch auf der Seite <strong>Dokumente verwalten</strong>.</li><li>Was du einmal geöffnet oder heruntergeladen hast, kannst du auch ohne Netz öffnen. Gibt es eine neue Fassung, lädt die App beim nächsten Öffnen die neue.</li><li>Wenn du dich abmeldest, löscht die App die gespeicherten Dokumente von deinem Gerät.</li><li>Für neue Dokumente gibt es keine Benachrichtigung.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="dokument-ansehen.html" data-seite="dokument-ansehen">Dokument ansehen</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

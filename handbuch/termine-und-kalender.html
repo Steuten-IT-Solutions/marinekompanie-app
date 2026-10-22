@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,14 +91,26 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Termine</h1><p class="wenn">Nur, wenn Termine eingeschaltet ist.</p><p>Unter <strong>Termine</strong> stehen die kommenden Termine der Marinekompanie Lank, nach Monaten geordnet. Diese öffentlichen Termine siehst du auch ohne Anmeldung.</p>
-<p class="hinweis">Bist du als Mitglied oder mit dem internen Kalender (z. B. als Anwärter) angemeldet und nutzt die Kompanie auch den Bereich Kalender, siehst du hier stattdessen den Kalender der Kompanie mit allen Terminen, auch den internen. Mehr dazu auf der Hilfeseite <strong>Kalender</strong>.</p>
-<h2>Einen Termin ansehen</h2>
-<p>In der Liste stehen Datum, Titel, Uhrzeit und, falls angegeben, der Ort. Ein Tipp auf einen Termin klappt ihn auf und zeigt die Beschreibung und diese Knöpfe:</p>
-<ul><li><strong>In meinen Kalender</strong>: Die App lädt eine Kalenderdatei herunter; das Handy bietet an, den Termin in den eigenen Kalender zu übernehmen.</li><li><strong>Mehr Infos</strong>: nur, wenn beim Termin ein Link hinterlegt ist.</li><li><strong>Karte</strong>: nur, wenn ein Ort angegeben ist; öffnet den Ort in Google Maps.</li></ul>
-<p>Ein erneuter Tipp klappt den Termin wieder zu. Vergangene Termine verschwinden von selbst aus der Liste.</p>
-<h2>Benachrichtigt werden</h2>
-<p>Ohne Konto steht unter der Liste <strong>Bei neuen Terminen benachrichtigen</strong>. Damit bekommst du eine Nachricht, wenn ein Termin dazukommt oder sich ändert, und auf Wunsch eine Erinnerung am Vortag. Mehr dazu unter <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
+<h1>Termine</h1><p class="wenn">Nur, wenn Termine eingeschaltet ist.</p><p>Unter <strong>Termine</strong> siehst du die kommenden öffentlichen Termine der Marinekompanie Lank, nach Monaten geordnet. Diese Termine sieht jeder, auch ohne Anmeldung. Du kannst einen Termin in deinen eigenen Kalender übernehmen oder dich über neue Termine benachrichtigen lassen.</p>
+<figure class="hilfe-bild"><img src="bilder/termine-und-kalender.jpg" alt="Liste der öffentlichen Termine, nach Monaten geordnet" loading="lazy"><figcaption>Liste der öffentlichen Termine, nach Monaten geordnet</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Termine</strong>. Meist ist das auch die Startseite der App.</p>
+<p class="hinweis">Bist du angemeldet und nutzt die Marinekompanie Lank zusätzlich ihren internen Kalender, siehst du hier stattdessen alle Termine aus diesem Kalender, auch die internen. Das beschreibt die Hilfeseite <strong>Termine mit Kalender</strong>, die du dann über <strong>?</strong> erreichst.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Monatsüberschrift</strong>: z. B. „Oktober 2026“; darunter die Termine dieses Monats.</li><li><strong>Termin</strong>: links das Datum, rechts Titel, Wochentag und Uhrzeit und, falls angegeben, der Ort. Steht keine Uhrzeit dabei, dauert der Termin den ganzen Tag.</li><li><strong>Bei neuen Terminen benachrichtigen</strong> (unter der Liste, nur ohne Anmeldung): führt zu den Benachrichtigungen.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Einen Termin ansehen</h3>
+<ol><li>Tippe auf den Termin. Er klappt auf und zeigt die Beschreibung, falls es eine gibt.</li><li>Tippe bei Bedarf auf einen der Knöpfe darunter (siehe unten).</li><li>Tippe noch einmal auf den Termin, um ihn wieder zuzuklappen.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/termine-und-kalender-termin.jpg" alt="Aufgeklappter Termin mit Beschreibung und den Knöpfen „In meinen Kalender“ und „Karte“" loading="lazy"><figcaption>Aufgeklappter Termin mit Beschreibung und den Knöpfen „In meinen Kalender“ und „Karte“</figcaption></figure>
+<p>Die Knöpfe eines aufgeklappten Termins:</p>
+<ul><li><strong>In meinen Kalender</strong>: Die App lädt eine Kalenderdatei herunter. Öffne sie, und dein Handy oder Computer bietet an, den Termin in deinen eigenen Kalender zu übernehmen.</li><li><strong>Mehr Infos</strong>: öffnet eine Webseite zum Termin. Den Knopf gibt es nur, wenn beim Termin ein Link eingetragen ist.</li><li><strong>Karte</strong>: zeigt den Ort in Google Maps. Den Knopf gibt es nur, wenn ein Ort angegeben ist.</li></ul>
+<h3>Über neue Termine benachrichtigt werden</h3>
+<ol><li>Tippe unter der Liste auf <strong>Bei neuen Terminen benachrichtigen</strong>.</li><li>Wähle aus, worüber du benachrichtigt werden möchtest, und tippe auf <strong>Benachrichtigungen einschalten</strong>.</li></ol>
+<p>Bist du angemeldet, stellst du das unter <strong>Meins</strong> → <strong>Konto</strong> → <strong>Benachrichtigungen einstellen</strong> ein. Alles Weitere steht unter <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Vergangene Termine verschwinden von selbst aus der Liste. Ein mehrtägiger Termin bleibt bis zu seinem letzten Tag stehen.</li><li>Gibt es keine kommenden Termine, steht dort „Keine anstehenden Termine.“</li><li>Die öffentlichen Termine trägt ein, wer bei der Marinekompanie Lank dafür zuständig ist. Fehlt ein Termin, wende dich an die Verantwortlichen.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li><li><a href="app-ueberblick.html" data-seite="app-ueberblick">Die App im Überblick</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

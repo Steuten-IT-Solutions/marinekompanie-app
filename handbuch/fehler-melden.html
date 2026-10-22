@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,14 +91,24 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Fehler melden</h1><p>Klappt etwas in der App nicht, kannst du das direkt aus der App melden, auch ohne Anmeldung. Die Meldung geht an die Betreuer der App (Steuten IT Solutions), nicht an die Verwaltung der Marinekompanie Lank.</p>
-<h2>So geht&apos;s</h2>
-<ol><li>Oben auf <strong>?</strong> tippen, am besten auf der Seite, auf der der Fehler passiert.</li><li>Unten auf der Hilfeseite (oder im Verzeichnis der Hilfe) <strong>Fehler melden</strong> wählen.</li><li>Kurz beschreiben, <strong>was nicht klappt</strong> (Pflicht). Wenn du magst, auch <strong>was du erwartet hast</strong>.</li><li>Optional ein <strong>Bildschirmfoto</strong> anhängen (PNG, JPEG oder WebP, höchstens 2 MB).</li><li>Angemeldet kannst du <strong>Meinen Namen mitschicken</strong> wählen, damit die Betreuer wissen, von wem die Meldung kommt. Ohne Haken geht kein Name mit.</li><li>Unter <strong>Das geht automatisch mit</strong> prüfen, was zusätzlich gesendet wird, und zustimmen.</li><li><strong>Meldung senden</strong>. Die Bestätigung „Danke, deine Meldung ist angekommen“ erscheint erst, wenn die App die Meldung gespeichert hat.</li></ol>
+<h1>Fehler melden</h1><p>Klappt etwas in der App nicht, meldest du es hier direkt an die Betreuer der App (Steuten IT Solutions) – auch ohne Anmeldung. Die Meldung geht nicht an die Verwaltung der Marinekompanie Lank.</p>
+<figure class="hilfe-bild"><img src="bilder/fehler-melden.jpg" alt="Formular „Fehler melden“ mit ausgefüllter Beschreibung" loading="lazy"><figcaption>Formular „Fehler melden“ mit ausgefüllter Beschreibung</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe oben auf <strong>?</strong>, am besten auf dem Bildschirm, auf dem der Fehler passiert. Tippe dann unten auf der Hilfeseite auf <strong>Fehler melden</strong>. Den Knopf findest du auch unten im Verzeichnis der Hilfe.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Was klappt nicht? (Pflicht)</strong>: deine Beschreibung, höchstens 2000 Zeichen.</li><li><strong>Was hast du erwartet? (freiwillig)</strong>: was eigentlich hätte passieren sollen.</li><li><strong>Bildschirmfoto (freiwillig)</strong>: ein Bild vom Fehler, als PNG, JPEG oder WebP, höchstens 2 MB.</li><li><strong>Meinen Namen mitschicken</strong> (nur mit Anmeldung): Ohne Haken geht kein Name mit.</li><li><strong>Das geht automatisch mit</strong>: alles, was zusätzlich gesendet wird.</li><li><strong>Zustimmung</strong>: dass die Meldung mit diesen Angaben an die Betreuer der App geht.</li><li><strong>Meldung senden</strong>: schickt die Meldung ab.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Einen Fehler melden</h3>
+<ol><li>Beschreibe unter <strong>Was klappt nicht? (Pflicht)</strong> kurz, was passiert ist.</li><li>Wenn du magst, schreib unter <strong>Was hast du erwartet? (freiwillig)</strong>, was du erwartet hast.</li><li>Häng bei Bedarf ein <strong>Bildschirmfoto</strong> an. Mit <strong>Entfernen</strong> nimmst du es wieder weg.</li><li>Bist du angemeldet, setze den Haken bei <strong>Meinen Namen mitschicken</strong>, wenn die Betreuer wissen sollen, von wem die Meldung kommt.</li><li>Prüfe unter <strong>Das geht automatisch mit</strong>, was zusätzlich gesendet wird, und setze den Haken bei der Zustimmung darunter.</li><li>Tippe auf <strong>Meldung senden</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/fehler-melden-senden.jpg" alt="Angaben unter „Das geht automatisch mit“" loading="lazy"><figcaption>Angaben unter „Das geht automatisch mit“</figcaption></figure>
+<p>Ist die Meldung gespeichert, erscheint „Danke, deine Meldung ist angekommen“. Mit <strong>Zur Hilfe</strong> kommst du zurück.</p>
 <h2>Was mitgeschickt wird</h2>
-<p>Genau das, was im Formular unter <em>Das geht automatisch mit</em> steht: die Seite in der App, die App-Version, Gerät und Browser, deine Rolle (oder „ohne Anmeldung“), die Uhrzeit und, falls es eine gab, die letzte Fehlermeldung der App. Dazu deine Beschreibung, das Bildschirmfoto und, nur wenn du es wählst, dein Name.</p>
+<p>Genau das, was unter <strong>Das geht automatisch mit</strong> steht: die Seite in der App, auf der du <strong>?</strong> getippt hast, die App-Version, Gerät und Browser, deine Rolle (oder „ohne Anmeldung“), die Uhrzeit und die letzte Fehlermeldung der App, falls es eine gab. Dazu deine Beschreibung, das Bildschirmfoto und, nur wenn du es wählst, dein Name.</p>
 <p class="hinweis">Schreib nichts Vertrauliches in die Meldung, z. B. keine Passwörter. Die Meldung wird bei den Betreuern in einem privaten GitHub-Repository gespeichert.</p>
 <h2>Gut zu wissen</h2>
-<ul><li>Die App schickt die Meldung im Hintergrund weiter, meist innerhalb weniger Minuten. Kommt sie dort sieben Tage lang nicht an, wird sie gelöscht.</li><li>Eine Antwort auf die Meldung bekommst du über die App nicht.</li><li>Fehlt der Knopf <strong>Fehler melden</strong>, ist die Funktion bei dieser App nicht eingerichtet.</li><li>Wer sehr viele Meldungen kurz hintereinander schickt, muss eine Weile warten.</li></ul>
+<ul><li>Die App schickt die Meldung im Hintergrund weiter. Kommt sie dort sieben Tage lang nicht an, wird sie gelöscht.</li><li>Eine Antwort auf die Meldung bekommst du über die App nicht.</li><li>Fehlt der Knopf <strong>Fehler melden</strong>, ist die Funktion bei dieser App nicht eingerichtet.</li><li>Wer sehr viele Meldungen kurz hintereinander schickt, muss eine Weile warten.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="app-ueberblick.html" data-seite="app-ueberblick">Die App im Überblick</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

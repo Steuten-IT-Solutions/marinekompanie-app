@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,32 +91,44 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Häufige Probleme</h1><p>Ein erster Blick lohnt sich immer unter <strong>Verwaltung → Einstellungen → Zustand und Updates</strong>: Die Ampel zeigt, wo etwas hakt, und der Text daneben sagt meist schon, was zu tun ist (siehe <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Statusmeldungen</a>). Wo welche Einstellung liegt, zeigt <a href="admin-einstellungen.html" data-seite="admin-einstellungen">Einstellungen im Überblick</a>.</p>
+<h1>Häufige Probleme</h1><p>Hier findest du als Admin Lösungen für Probleme, die häufig vorkommen: Zu jedem Problem steht, woran es meist liegt und was du tun kannst. Einen eigenen Bildschirm gibt es dafür nicht.</p>
+<h2>Zuerst: die Ampel ansehen</h2>
+<ol><li>Tippe unten auf <strong>Verwaltung</strong> und dann auf <strong>Einstellungen</strong>.</li><li>Wähle <strong>Zustand und Updates</strong>.</li><li>Sieh nach, welche Zeile gelb oder rot ist. Der Text daneben sagt meist schon, was zu tun ist.</li></ol>
+<p>Mehr dazu unter <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>. Wo welche Einstellung liegt, zeigt <a href="admin-einstellungen.html" data-seite="admin-einstellungen">Einstellungen</a>.</p>
 <h2>Ein Bereich fehlt in der App</h2>
-<p>Unter <strong>Einstellungen → Bereiche</strong> prüfen, ob er eingeschaltet ist. Kalender, Galerie und News erscheinen erst, wenn sie auch eingerichtet sind; dann steht dort „Noch nicht eingerichtet“ mit <strong>Jetzt einrichten</strong>. Umfragen lassen sich nur zusammen mit dem Schwarzes Brett einschalten.</p>
+<ol><li>Öffne <strong>Verwaltung</strong> → <strong>Einstellungen</strong> → <strong>Bereiche</strong>.</li><li>Prüfe, ob der Bereich eingeschaltet ist, und schalte ihn bei Bedarf ein.</li><li>Steht beim Bereich „Noch nicht eingerichtet“, tippe auf <strong>Jetzt einrichten</strong>. Kalender, Galerie und News erscheinen erst, wenn sie auch eingerichtet sind.</li></ol>
+<p>Umfragen lassen sich nur zusammen mit dem Schwarzes Brett einschalten.</p>
 <h2>Jemand sieht etwas nicht, das er sehen sollte</h2>
-<p>Unter <strong>Verwaltung → Mitglieder</strong> die Person öffnen, ganz unten <strong>Konto und Rolle</strong> aufklappen und ihre Rolle prüfen, dann unter <strong>Einstellungen → Rollen</strong>, welche Rechte diese Rolle hat. Rechte wirken nur in eingeschalteten Bereichen. Eine Rolle nur mit dem internen Kalender (z. B. Anwärter) sieht zum Beispiel den internen Kalender, aber nicht den Mitgliederbereich. Mehr dazu unter <a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen und Mitglieder</a>.</p>
+<ol><li>Öffne unter <strong>Verwaltung</strong> → <strong>Mitglieder</strong> die Person.</li><li>Klappe ganz unten <strong>Konto und Rolle</strong> auf und prüfe ihre Rolle.</li><li>Prüfe unter <strong>Einstellungen</strong> → <strong>Rollen</strong>, welche Rechte diese Rolle hat.</li></ol>
+<p>Rechte wirken nur in eingeschalteten Bereichen. Eine Rolle nur mit dem internen Kalender (z. B. Anwärter) sieht zum Beispiel den internen Kalender, aber nicht den Mitgliederbereich. Mehr dazu unter <a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen</a>.</p>
 <h2>Jemand hat sein Passwort vergessen</h2>
-<p>Im Mitglied <strong>Konto und Rolle</strong> aufklappen und ein neues Startpasswort erzeugen, siehe <a href="mitglieder-anlegen.html" data-seite="mitglieder-anlegen">Mitglieder anlegen</a>.</p>
-<h2>Fotos erscheinen grau</h2>
-<p>Neue Bilder bereitet die App beim ersten Abruf und im Hintergrund auf. Bei vielen neuen Bildern zeigt sie für einige kurz einen grauen Platzhalter und lädt sie dann von selbst nach. Ohne WordPress geht das zügiger mit einem Cronjob beim Hoster (die Adresse steht in der Zeile <strong>Hintergrundaufgaben</strong> der Ampel); mit WordPress hilft es, wenn die Webseite regelmäßig aufgerufen wird.</p>
+<ol><li>Öffne unter <strong>Verwaltung</strong> → <strong>Mitglieder</strong> die Person.</li><li>Klappe <strong>Konto und Rolle</strong> auf und erzeuge ein neues Startpasswort.</li><li>Gib es der Person weiter; sie ändert es danach unter <strong>Meins</strong> → <strong>Konto</strong>.</li></ol>
+<p>Siehe auch <a href="mitglieder-anlegen.html" data-seite="mitglieder-anlegen">Mitglied anlegen</a>.</p>
+<h2>Bilder der Galerie erscheinen grau</h2>
+<p>Neue Bilder bereitet die App beim ersten Abruf und im Hintergrund auf. Bei vielen neuen Bildern zeigt sie für einige kurz einen grauen Platzhalter und lädt sie dann von selbst nach. Meist genügt es zu warten.</p>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Ohne WordPress geht das zügiger mit einem Cronjob beim Hoster; die Adresse steht in der Zeile <strong>Hintergrundaufgaben</strong> der Ampel. Mit WordPress hilft es, wenn die Webseite regelmäßig aufgerufen wird.</p>
 <h2>Die Galerie gleicht nicht mehr ab</h2>
-<p>Unter <strong>Verwaltung → Einstellungen → Galerie</strong> steht der Fehler des letzten Abgleichs; mit <strong>Jetzt abgleichen</strong> versuchst du es sofort. Häufige Ursachen:</p>
-<ul><li>Der Ordner in Google Drive ist für das verbundene Google-Konto bzw. das Dienstkonto nicht mehr sichtbar, z. B. weil die Freigabe entfernt wurde.</li><li>Die Verbindung zu Google ist abgelaufen oder wurde widerrufen. Dann unter <strong>Einstellungen → Google-Zugang</strong> auf <strong>Verbindung trennen</strong> tippen und neu mit Google verbinden. Läuft sie immer wieder nach 7 Tagen ab, ist das Google-Projekt noch im Status „Testen“, siehe <a href="admin-google.html" data-seite="admin-google">Google einrichten</a>.</li></ul>
+<ol><li>Öffne <strong>Verwaltung</strong> → <strong>Einstellungen</strong> → <strong>Galerie</strong>. Dort steht der Fehler des letzten Abgleichs.</li><li>Tippe auf <strong>Jetzt abgleichen</strong>, um es sofort noch einmal zu versuchen.</li></ol>
+<p>Klappt es weiter nicht, liegt es meist an einem dieser Gründe:</p>
+<ul><li>Der Ordner in Google Drive ist für das verbundene Google-Konto bzw. das Dienstkonto nicht mehr sichtbar, z. B. weil die Freigabe entfernt wurde. Gib ihn dort wieder frei.</li><li>Die Verbindung zu Google ist abgelaufen oder wurde widerrufen. Tippe unter <strong>Einstellungen</strong> → <strong>Google-Zugang</strong> auf <strong>Verbindung trennen</strong> und verbinde neu mit Google.</li></ul>
+<p>Läuft die Verbindung immer wieder nach 7 Tagen ab, ist das Google-Projekt noch im Status „Testen“, siehe <a href="admin-google.html" data-seite="admin-google">Google-Zugang</a>.</p>
 <h2>Der Kalender zeigt nichts an</h2>
-<p>Unter <strong>Einstellungen → Kalender</strong> mit <strong>Kalender testen</strong> prüfen, ob er erreichbar ist. Meldet die Ampel, dass die Verbindung mit Google den Kalender nicht lesen darf: unter <strong>Einstellungen → Google-Zugang</strong> die Verbindung trennen und neu verbinden, dabei auch das Häkchen für den Kalender setzen.</p>
+<ol><li>Öffne <strong>Verwaltung</strong> → <strong>Einstellungen</strong> → <strong>Kalender</strong>.</li><li>Tippe auf <strong>Kalender testen</strong>. Die App prüft, ob der Kalender erreichbar ist.</li><li>Meldet die Ampel, dass die Verbindung mit Google den Kalender nicht lesen darf: Trenne unter <strong>Einstellungen</strong> → <strong>Google-Zugang</strong> die Verbindung und verbinde neu. Setze dabei auch das Häkchen für den Kalender.</li></ol>
 <h2>Benachrichtigungen kommen nicht an</h2>
-<p>Die Zeile <strong>Push-Benachrichtigungen</strong> der Ampel zeigt, ob der Server Benachrichtigungen senden kann. Fehlt etwas, kann das nur der Hoster nachrüsten. Liegt es am Gerät (abgelehnte Nachfrage, iPhone ohne installierte App), hilft <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
+<ul><li>Die Zeile <strong>Push-Benachrichtigungen</strong> der Ampel zeigt, ob der Server Benachrichtigungen senden kann. Fehlt dort etwas, kann das nur der Hoster nachrüsten.</li><li>Liegt es am Gerät (abgelehnte Nachfrage des Browsers, iPhone ohne installierte App), hilft <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</li></ul>
 <h2>Updates kommen nicht an</h2>
-<p>Unter <strong>Verwaltung → Einstellungen → Zustand und Updates</strong> steht unter <strong>Updates</strong>, was zuletzt passiert ist und warum eine neue Version nicht eingespielt werden kann. Häufig:</p>
-<ul><li><strong>Automatische Updates sind gesperrt</strong> (mit WordPress z. B. in den Einstellungen der Webseite): Neue Versionen hier von Hand einspielen.</li><li><strong>WordPress fragt nach FTP-Zugangsdaten</strong>: WordPress darf die Plugin-Dateien nicht selbst schreiben. Der Hoster muss die Dateirechte anpassen, oder du lädst das Update von Hand hoch.</li><li><strong>Zu alte PHP- oder WordPress-Version</strong>: PHP lässt sich meist im Kundenmenü des Hosters umstellen; WordPress zuerst aktualisieren.</li><li><strong>Ohne WordPress darf PHP die Programmdateien nicht ändern</strong>: beim Hoster die Dateirechte prüfen oder <code>install.php</code> erneut hochladen und <strong>Aktualisieren / Reparieren</strong> wählen.</li><li><strong>Zu wenig Speicherplatz</strong>: Die Zeile <strong>Server</strong> wird gelb, wenn weniger als 200 MB frei sind. Platz schaffen oder das Paket beim Hoster erweitern.</li></ul>
-<p>Mehr dazu unter <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Updates und Datensicherung</a>.</p>
-<h2>Hintergrundaufgaben laufen nicht (ohne WordPress)</h2>
-<p>Ohne Cronjob laufen Abgleiche und Updates nur, wenn jemand die App aufruft. Ist die Zeile <strong>Hintergrundaufgaben</strong> gelb oder rot, richte beim Hoster einen Cronjob ein, der alle 15 Minuten die dort genannte Adresse aufruft.</p>
+<p>Unter <strong>Verwaltung</strong> → <strong>Einstellungen</strong> → <strong>Zustand und Updates</strong> steht unter <strong>Updates</strong>, was zuletzt passiert ist und warum eine neue Version nicht eingespielt werden kann. Häufige Gründe:</p>
+<ul><li><strong>Automatische Updates sind gesperrt</strong> (mit WordPress z. B. in den Einstellungen der Webseite): Spiel neue Versionen dort von Hand ein.</li><li><strong>Zu wenig Speicherplatz</strong>: Die Zeile <strong>Server</strong> wird gelb, wenn weniger als 200 MB frei sind. Schaffe Platz oder erweitere das Paket beim Hoster.</li><li><strong>Zu alte PHP- oder WordPress-Version</strong>: PHP lässt sich meist im Kundenmenü des Hosters umstellen; WordPress zuerst aktualisieren.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Fragt WordPress nach FTP-Zugangsdaten, darf es die Plugin-Dateien nicht selbst schreiben; der Hoster muss die Dateirechte anpassen, oder du lädst das Update von Hand hoch. Ohne WordPress: Darf PHP die Programmdateien nicht ändern, prüfe beim Hoster die Dateirechte oder lade <code>install.php</code> erneut hoch und wähle <strong>Aktualisieren / Reparieren</strong>.</p>
+<p>Mehr dazu unter <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Datensicherung</a>.</p>
+<h2>Die Zeile „Hintergrundaufgaben“ ist gelb oder rot (ohne WordPress)</h2>
+<p>Abgleiche und Updates laufen dann nur, wenn jemand die App aufruft.</p>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Richte beim Hoster einen Cronjob ein, der alle 15 Minuten die Adresse aufruft, die in der Zeile <strong>Hintergrundaufgaben</strong> steht.</p>
 <h2>Die Zeile „Schutz der Daten“ ist rot (ohne WordPress)</h2>
-<p>Dann sind Dateien mit Daten aus dem Internet abrufbar, weil der Webserver die Sperre nicht auswertet. Lass sofort beim Hoster das Verzeichnis <code>data</code> sperren oder lege die Daten außerhalb des Web-Verzeichnisses ab.</p>
+<p>Dann sind Dateien mit Daten aus dem Internet abrufbar. Handle sofort.</p>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Der Webserver wertet die Sperre des Datenverzeichnisses nicht aus. Lass beim Hoster das Verzeichnis <code>data</code> sperren oder lege die Daten außerhalb des Web-Verzeichnisses ab.</p>
 <h2>Nichts davon hilft</h2>
-<p>Ist unter der Ampel bei <strong>Hilfe</strong> eine Kontaktadresse hinterlegt, melde dich dort. Haben die Statusmeldungen eure Zustimmung, sehen die Betreuer schwere Fehler oft schon von selbst.</p>
+<ul><li>Ist unter der Ampel bei <strong>Hilfe</strong> eine Kontaktadresse hinterlegt, melde dich dort.</li><li>Oder melde den Fehler direkt aus der App, siehe <a href="fehler-melden.html" data-seite="fehler-melden">Fehler melden</a>.</li><li>Haben die Statusmeldungen eure Zustimmung, sehen die Betreuer schwere Fehler oft schon von selbst.</li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>

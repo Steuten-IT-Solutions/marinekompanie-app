@@ -80,6 +80,9 @@ a { color: var(--primary-text, #2f5d8a); }
 code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
 .hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
 .gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
 .gruppe ul { padding-left: 1.2em; }
 .wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
 footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
@@ -88,24 +91,24 @@ footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px;
 <body>
 <header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der Marinekompanie Lank</a></div></header>
 <main class="wrap">
-<h1>Die App aufs Handy holen</h1><p>Die App der Marinekompanie Lank läuft im Browser und lässt sich wie jede andere App auf den Startbildschirm legen. Einen App-Store braucht es nicht, und es kostet nichts.</p>
-<h2>Wo die Anleitung in der App steht</h2>
-<ul><li>Oben in der App erscheint der Hinweis <strong>Die App aufs Handy holen</strong>. Bietet dein Browser die Installation direkt an, tippst du dort auf <strong>Installieren</strong>, sonst auf <strong>So geht&apos;s</strong>. Mit <strong>✕</strong> blendest du den Hinweis aus.</li><li>Mit Konto findest du die Anleitung auch unter <strong>Meins → Konto → App installieren</strong>.</li></ul>
-<p>Die Anleitung zeigt die Schritte für dein Gerät mit Bildern; oben wählst du zwischen <strong>iPhone / iPad</strong> und <strong>Android</strong>. Ist die App schon installiert und du benutzt sie gerade, steht dort „Alles erledigt“.</p>
-<h2>iPhone und iPad</h2>
-<ol><li>Die Adresse der App in <strong>Safari</strong> öffnen.</li><li>Unten auf das <strong>Teilen-Symbol</strong> (Quadrat mit Pfeil nach oben) tippen. Steht unten rechts nur „•••“, zuerst darauf und dann auf <strong>Teilen</strong> tippen.</li><li><strong>Zum Home-Bildschirm</strong> wählen. Der Eintrag steht weiter unten in der Liste; nach oben wischen, bis er erscheint.</li><li>Oben rechts auf <strong>Hinzufügen</strong> tippen. Steht dort der Schalter „Als Web-App öffnen“, lass ihn eingeschaltet.</li></ol>
-<p>Ab jetzt die App immer über das neue Symbol starten; die Anmeldung bleibt gespeichert.</p>
-<p class="hinweis">In anderen Browsern auf dem iPhone (z. B. Chrome) fehlt <strong>Zum Home-Bildschirm</strong> oft. Dann die Adresse kopieren und in Safari öffnen.</p>
-<h2>Android</h2>
-<ol><li>Die Adresse der App in <strong>Chrome</strong> öffnen.</li><li>Bietet die App einen Knopf <strong>App installieren</strong> an, darauf tippen. Sonst oben rechts auf die drei Punkte <strong>⋮</strong> tippen und <strong>App installieren</strong> wählen (je nach Handy heißt es auch „Zum Startbildschirm hinzufügen“).</li><li>Mit <strong>Installieren</strong> bzw. <strong>Hinzufügen</strong> bestätigen.</li></ol>
-<p class="hinweis">Bitte nicht im Samsung-Browser installieren: Dort blockiert Google Play Protect die App fälschlich als „Unsichere App“. Die App bietet dann <strong>In Chrome öffnen</strong> an.</p>
-<p>Ist die Adresse in Facebook, Instagram o. Ä. geöffnet, klappt die Installation nicht. Kopiere die Adresse dann und öffne sie in Safari bzw. Chrome.</p>
-<h2>Anleitung weitergeben</h2>
-<p>Unten in der Anleitung steht ein Link, der genau diese Anleitung öffnet. Mit <strong>Link teilen</strong> schickst du ihn z. B. per WhatsApp oder E-Mail weiter.</p>
-<h2>Ohne Internet</h2>
-<p>Was du zuletzt geladen hast, bleibt auch ohne Netz sichtbar. Oben steht dann „Offline – angezeigt werden die zuletzt geladenen Daten.“</p>
-<h2>Benachrichtigungen</h2>
-<p>Auf dem iPhone und iPad gibt es Benachrichtigungen nur in der installierten App. Mehr dazu unter <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</p>
+<h1>Die App aufs Handy holen</h1><p>Die App der Marinekompanie Lank läuft im Browser und lässt sich wie jede andere App auf den Startbildschirm legen – ohne App-Store und kostenlos. Diese Seite zeigt dir Schritt für Schritt, wie das auf deinem Handy geht.</p>
+<figure class="hilfe-bild"><img src="bilder/app-installieren.jpg" alt="Anleitung „Die App aufs Handy holen“ für das iPhone" loading="lazy"><figcaption>Anleitung „Die App aufs Handy holen“ für das iPhone</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<ul><li>Tippe im Hinweis <strong>Die App aufs Handy holen</strong> oben auf <strong>So geht&apos;s</strong>.</li><li>Mit Konto: Tippe unten auf <strong>Meins</strong>, wähle oben im Menü <strong>Konto</strong> und tippe auf <strong>App installieren</strong>.</li></ul>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>App installieren</strong> (oben): erscheint nur, wenn dein Browser die Installation direkt anbietet (z. B. Chrome auf Android). Ein Tipp genügt.</li><li><strong>iPhone / iPad</strong> und <strong>Android</strong>: wählen die passende Anleitung. Die App wählt dein Gerät schon vor.</li><li><strong>Schritte mit Bildern</strong>: Die Bilder zeigen, wohin du tippst; die Stelle ist farbig umkreist.</li><li><strong>Anleitung weitergeben</strong> (unten): ein Link, der genau diese Anleitung öffnet, mit dem Knopf <strong>Link teilen</strong>.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Auf dem iPhone oder iPad</h3>
+<ol><li>Öffne die Adresse der App in <strong>Safari</strong>.</li><li>Tippe unten auf das <strong>Teilen-Symbol</strong> (Quadrat mit Pfeil nach oben). Steht unten rechts nur <strong>•••</strong>, tippe zuerst darauf und dann auf <strong>Teilen</strong>.</li><li>Wähle <strong>Zum Home-Bildschirm</strong>. Der Eintrag steht weiter unten in der Liste; wische nach oben, bis er erscheint.</li><li>Tippe oben rechts auf <strong>Hinzufügen</strong>. Steht dort der Schalter „Als Web-App öffnen“, lass ihn eingeschaltet.</li><li>Starte die App ab jetzt immer über das neue Symbol mit dem Logo. Die Anmeldung bleibt gespeichert.</li></ol>
+<h3>Auf einem Android-Handy</h3>
+<ol><li>Öffne die Adresse der App in <strong>Chrome</strong>.</li><li>Steht oben der Knopf <strong>App installieren</strong>, tippe darauf und bestätige. Fertig.</li><li>Sonst zeigt die Anleitung unter <strong>Android</strong> die Schritte mit Bildern: Tippe in Chrome oben rechts auf die drei Punkte <strong>⋮</strong> und wähle <strong>App installieren</strong> (je nach Handy heißt der Eintrag auch „Zum Startbildschirm hinzufügen“).</li><li>Bestätige mit <strong>Installieren</strong> bzw. <strong>Hinzufügen</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/app-installieren-android.jpg" alt="Anleitung für Android mit den drei Punkten oben rechts" loading="lazy"><figcaption>Anleitung für Android mit den drei Punkten oben rechts</figcaption></figure>
+<h3>Die Anleitung an andere schicken</h3>
+<ol><li>Tippe unten auf der Seite auf <strong>Link teilen</strong>.</li><li>Wähle z. B. WhatsApp oder E-Mail. Am Computer kopiert die App den Link.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>In anderen Browsern auf dem iPhone (z. B. Chrome) fehlt <strong>Zum Home-Bildschirm</strong> oft. Die App zeigt dann einen Hinweis; kopiere die Adresse und öffne sie in Safari.</li><li>Bitte nicht im Samsung-Browser installieren: Dort blockiert Google Play Protect die App fälschlich als „Unsichere App“. Die App bietet dann <strong>In Chrome öffnen</strong> an.</li><li>Ist die Adresse in Facebook, Instagram o. Ä. geöffnet, klappt die Installation nicht. Die App zeigt dann <strong>Adresse kopieren</strong>; öffne die Adresse in Safari bzw. Chrome.</li><li>Benutzt du die App schon installiert, steht hier „Alles erledigt“.</li><li>Was du zuletzt geladen hast, bleibt auch ohne Internet sichtbar. Oben steht dann „Offline – angezeigt werden die zuletzt geladenen Daten.“</li><li>Auf dem iPhone und iPad gibt es Benachrichtigungen nur in der installierten App, siehe <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li><li><a href="app-ueberblick.html" data-seite="app-ueberblick">Die App im Überblick</a></li></ul>
 </main>
 <footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
 </body>
