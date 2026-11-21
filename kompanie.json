@@ -14,5 +14,10 @@
     "colors": {
         "primary": "#1f4498",
         "accent": "#c9a24a"
+    },
+    "translations": {
+        "en": {
+            "greeting": "Ahoy, {name}"
+        }
     }
 }
