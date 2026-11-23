@@ -43,5 +43,9 @@
   "themeColor": "#1f4498",
   "backgroundColor": "#eff1f2",
   "legal": {},
-  "translations": {}
+  "translations": {
+    "en": {
+      "greeting": "Ahoy, {name}"
+    }
+  }
 }
